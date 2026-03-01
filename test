@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinet d'Avocats - Expertise & Confiance</title>
+    <style>
+        /* Police et couleurs professionnelles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: #ecf0f1;
+            margin-bottom: 2rem;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+        .service {
+            flex: 1;
+            min-width: 300px;
+            margin: 1rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabinet d'Avocats Dupont & Associés</h1>
+        <p>Expertise juridique et accompagnement personnalisé</p>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#services">Nos Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="accueil">
+        <div class="container">
+            <h2>Votre partenaire juridique de confiance</h2>
+            <p>Nous défendons vos intérêts avec rigueur et professionnalisme.</p>
+            <a href="#contact" class="btn">Prendre rendez-vous</a>
+        </div>
+    </section>
+
+    <section class="container" id="services">
+        <h2>Nos Domaines d'Expertise</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Droit des Affaires</h3>
+                <p>Conseil et accompagnement pour les entreprises et les entrepreneurs.</p>
+            </div>
+            <div class="service">
+                <h3>Droit de la Famille</h3>
+                <p>Divorce, garde d'enfants, successions et médiation familiale.</p>
+            </div>
+            <div class="service">
+                <h3>Droit Pénal</h3>
+                <p>Défense et représentation devant les tribunaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour une consultation ou un rendez-vous, contactez-nous par téléphone ou email.</p>
+        <p>📞 Téléphone : 01 23 45 67 89</p>
+        <p>✉ Email : contact@dupont-avocats.fr</p>
+        <p>📍 Adresse : 123 Rue de la Loi, 75000 Paris</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Cabinet Dupont & Associés. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
