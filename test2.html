@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WILLIAM</title>
     <style>
-        
+        /* Polices et couleurs inspirées de MoonHood */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #1a1a1a;
@@ -90,41 +90,36 @@
             margin-bottom: 1rem;
         }
 
-        
-        .experiences {
-            background-color: #f9f9f9;
-            color: #333;
-            padding: 2rem;
-            border-radius: 8px;
-            margin: 2rem auto;
-            max-width: 900px;
-            text-align: left;
-        }
+        /* STYLES POUR LES EXPÉRIENCES (sans fond différent, sans bleu) */
         .experience {
             margin-bottom: 25px;
-            border-left: 4px solid #0066cc;
-            padding-left: 20px;
+            border-left: 2px solid #888;
+            padding-left: 15px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .poste {
             font-weight: bold;
             font-size: 1.1rem;
-            color: #000;
+            color: #f0f0f0;
             margin-bottom: 5px;
         }
         .entreprise {
-            color: #000;
+            color: #ccc;
             font-size: 1rem;
             margin-bottom: 5px;
         }
         .duree, .lieu {
-            color: #666;
+            color: #888;
             font-size: 0.95rem;
             margin-bottom: 3px;
         }
         .icone {
-            width: 20px;
-            height: 20px;
-            background-color: #0066cc;
+            width: 12px;
+            height: 12px;
+            background-color: #888;
             display: inline-block;
             margin-right: 10px;
             vertical-align: middle;
@@ -132,7 +127,13 @@
         .formation {
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid #ddd;
+            border-top: 1px solid #333;
+        }
+        .formation h3 {
+            color: #f0f0f0;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
         }
     </style>
 </head>
@@ -180,10 +181,10 @@
         </div>
     </section>
 
-    
+    <!-- SECTION EXPÉRIENCE (sans fond différent) -->
     <section id="expérience" class="section">
-        <div class="experiences">
-            <h2 style="color: #2a2a2a; text-align: center; margin-bottom: 2rem;">EXPÉRIENCE</h2>
+        <div class="container">
+            <h2>EXPÉRIENCE</h2>
 
             <div class="experience">
                 <div>
@@ -224,7 +225,7 @@
             </div>
 
             <div class="formation">
-                <h3 style="color: #2a2a2a; margin-bottom: 1rem;">FORMATION</h3>
+                <h3>FORMATION</h3>
 
                 <div class="experience">
                     <div>
