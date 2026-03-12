@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KOLGAR</title>
     <style>
-    /* Fond d'écran couvrant toute la page */
-    body {
-        font-family: 'Arial', sans-serif;
-        background: url('testFOND1.jpg') no-repeat center center;
-        background-size: cover;
-        color: #e0e0e0;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
+        /* Fond d'écran couvrant toute la page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('testFOND1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden; /* Empêche le défilement horizontal */
+            width: 100%; /* Assure que le body prend toute la largeur */
         }
+
+        /* Adaptation pour smartphones */
+        @media (max-width: 768px) {
+            body {
+                background-size: cover;
+                background-attachment: scroll; /* Permet le défilement fluide sur mobile */
+            }
+        }
+
         .section {
             margin: 2rem auto;
             text-align: center;
@@ -26,6 +37,7 @@
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
             max-width: 1200px;
         }
+
         .btn {
             display: inline-block;
             background: #C25B60;
@@ -37,28 +49,32 @@
             font-weight: bold;
             font-size: 1.1rem;
         }
-        /* Autres styles inchangés */
+
+        .highlight {
+            color: #8fbc8f;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <!-- Bannière de navigation avec fond semi-transparent -->
-<nav style="background: rgba(11, 11, 11, 0.7); padding: 1rem; text-align: center; border-top: 1px solid #333; border-bottom: 1px solid #333;">
-    <a href="#competences" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">compétences</a>
-    <a href="#experience" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">expérience</a>
-    <a href="blog.html" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">articles juridiques</a>
-    <a href="#contact" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">contact</a>
-</nav>
+    <nav style="background: rgba(11, 11, 11, 0.7); padding: 1rem; text-align: center; border-top: 1px solid #333; border-bottom: 1px solid #333; width: 100%;">
+        <a href="#competences" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">compétences</a>
+        <a href="#experience" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">expérience</a>
+        <a href="blog.html" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">articles juridiques</a>
+        <a href="#contact" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">contact</a>
+    </nav>
 
     <!-- Titre "KOLGAR élève Avocat pénaliste" avec fond semi-transparent -->
-<div style="text-align: center; padding: 2rem 1rem; background: rgba(11, 11, 11, 0.5);">
-    <div class="logo" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem;">KOLGAR</div>
-    <p style="margin: 0; font-size: 1rem;">élève Avocat pénaliste</p>
-</div>
+    <div style="text-align: center; padding: 2rem 1rem; background: rgba(11, 11, 11, 0.5); width: 100%;">
+        <div class="logo" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem;">KOLGAR</div>
+        <p style="margin: 0; font-size: 1rem;">élève Avocat pénaliste</p>
+    </div>
 
-<!-- Bouton "URGENCE" avec fond semi-transparent -->
-<div style="text-align: center; padding: 1rem; background: rgba(11, 11, 11, 0.5);">
-    <a href="#contact" class="btn">URGENCE* : 0600000000 ou urgence@wkavocat.fr</a>
-</div>
+    <!-- Bouton "URGENCE" avec fond semi-transparent -->
+    <div style="text-align: center; padding: 1rem; background: rgba(11, 11, 11, 0.5); width: 100%;">
+        <a href="#contact" class="btn">URGENCE* : 0600000000 ou urgence@wkavocat.fr</a>
+    </div>
 
     <!-- Reste du contenu -->
     <section id="" class="section">
@@ -96,17 +112,17 @@
         </div>
     </section>
 
-    <section id="experience" class="section" style="
-    <div class="container">
-        <h2>EXPÉRIENCE</h2>
-        <div class="experience">
-            <div>
-                <span class="icone"></span>
-                <span class="poste"><span class="highlight">Élève avocat</span> - droit pénal</span>
-            </div>
-            <div class="entreprise">Ministère de la Justice - Tribunal judiciaire de Créteil</div>
-            <div class="duree">janv. 2026 - juin 2026 · 6 mois</div>
-            <div class="lieu">Créteil</div>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>EXPÉRIENCE</h2>
+            <div class="experience">
+                <div>
+                    <span class="icone"></span>
+                    <span class="poste"><span class="highlight">Élève avocat</span> - droit pénal</span>
+                </div>
+                <div class="entreprise">Ministère de la Justice - Tribunal judiciaire de Créteil</div>
+                <div class="duree">janv. 2026 - juin 2026 · 6 mois</div>
+                <div class="lieu">Créteil</div>
             </div>
 
             <div class="experience">
@@ -232,8 +248,8 @@
     </section>
 
     <footer style="background: rgba(30, 30, 30, 0.9); text-align: center; padding: 1.5rem; width: 100%;">
-    <p style="margin: 0;">&copy; 2026 Cabinet d'élève avocat KOLGAR. Tous droits réservés.</p>
-    <p style="margin: 0;"><a href="mentions-legales.html" style="color: #ccc;">Mentions légales</a></p>
-</footer>
+        <p style="margin: 0;">&copy; 2026 Cabinet d'élève avocat KOLGAR. Tous droits réservés.</p>
+        <p style="margin: 0;"><a href="mentions-legales.html" style="color: #ccc;">Mentions légales</a></p>
+    </footer>
 </body>
 </html>
