@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WILLIAM</title>
     <style>
-        /* Fond style marbre */
+        /* Fond marbre noir */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
-            background-image:
-                linear-gradient(rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07)),
-                url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="200" height="200" fill="%23d0d0d0"/><path d="M0,0 Q50,30 100,0 T200,0 L200,200 L0,200 Z" fill="%23e0e0e0" opacity="0.3"/><path d="M0,50 Q50,80 100,50 T200,50 L200,200 L0,200 Z" fill="%23f0f0f0" opacity="0.2"/><path d="M0,100 Q50,130 100,100 T200,100 L200,200 L0,200 Z" fill="%23e8e8e8" opacity="0.2"/><path d="M0,150 Q50,180 100,150 T200,150 L200,200 L0,200 Z" fill="%23d8d8d8" opacity="0.2"/></svg>');
-            color: #333;
+            background: #0a0a0a url('https://mistralaiblackforestprod.blob.core.windows.net/images/blackforest/7997/a224/-cd4/f-44cf-8c30-4cd17b7eabb7/image.jpg?se=2026-03-12T01%3A35%3A14Z&sp=r&sv=2026-02-06&sr=b&sig=QiKbuuYMEQ3tMBd6NB5Bu7gT2muL0melDU6vm%2BMIfQ0%3D') no-repeat center center fixed;
+            background-size: cover;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -28,11 +26,11 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            background: rgba(40, 40, 40, 0.8);
+            background: rgba(20, 20, 20, 0.9);
             padding: 0.8rem;
         }
         nav a {
-            color: #f0f0f0;
+            color: #e0e0e0;
             text-decoration: none;
             margin: 0.5rem;
             font-weight: bold;
@@ -47,21 +45,20 @@
             margin: 2rem 0;
             text-align: center;
             padding: 1.5rem;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(100, 100, 100, 0.5);
             border-radius: 12px;
-            background: rgba(255, 255, 255, 0.85);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            background: rgba(20, 20, 20, 0.8);
         }
         .section h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
-            color: #2c3e50;
+            color: #e0e0e0;
         }
         .section p {
             font-size: 0.95rem;
             max-width: 800px;
             margin: 0 auto;
-            color: #555;
+            color: #ccc;
         }
         .services {
             display: flex;
@@ -74,17 +71,16 @@
             flex: 1;
             min-width: 280px;
             max-width: 350px;
-            background: rgba(255, 255, 255, 0.6);
+            background: rgba(30, 30, 30, 0.7);
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
             margin: 0.5rem;
-            border: 1px solid rgba(0, 0, 0, 0.05);
         }
         .service h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #2c3e50;
+            color: #4CAF50; /* Vert pour les titres des services */
         }
         .btn {
             display: inline-block;
@@ -98,16 +94,22 @@
             font-size: 1.1rem;
         }
         footer {
-            background: rgba(40, 40, 40, 0.8);
+            background: rgba(20, 20, 20, 0.9);
             text-align: center;
             padding: 1.5rem;
-            color: #f0f0f0;
+            color: #ccc;
             font-size: 0.9rem;
         }
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
             margin-bottom: 0.8rem;
+        }
+
+        /* Mots clés en vert */
+        .highlight {
+            color: #4CAF50;
+            font-weight: bold;
         }
 
         /* Expérience et formation */
@@ -122,11 +124,14 @@
         .poste {
             font-weight: bold;
             font-size: 1rem;
-            color: #2c3e50;
+            color: #e0e0e0;
             margin-bottom: 0.3rem;
         }
+        .poste .highlight {
+            color: #4CAF50;
+        }
         .entreprise {
-            color: #666;
+            color: #ccc;
             font-size: 0.9rem;
             margin-bottom: 0.3rem;
         }
@@ -138,7 +143,7 @@
         .icone {
             width: 10px;
             height: 10px;
-            background-color: #888;
+            background-color: #4CAF50;
             display: inline-block;
             margin-right: 8px;
             vertical-align: middle;
@@ -146,10 +151,10 @@
         .formation, .Certifications {
             margin-top: 1.5rem;
             padding-top: 1rem;
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: 1px solid rgba(100, 100, 100, 0.3);
         }
         .formation h3, .Certifications h3 {
-            color: #2c3e50;
+            color: #e0e0e0;
             text-align: center;
             margin-bottom: 1rem;
             font-size: 1.3rem;
@@ -188,30 +193,30 @@
 
     <section id="" class="section">
         <a href="#contact" class="btn">Urgence</a>
-        <p style="margin-top: 1rem;">(notamment pour la famille d'une personne actuellement en garde à vue)</p>
-        <p>Règlement des honoraires par l'aide juridictionnelle (AJ) acceptée</p>
+        <p style="margin-top: 1rem;">(notamment pour la famille d'une personne actuellement en <span class="highlight">garde à vue</span>)</p>
+        <p>Règlement des honoraires par l'<span class="highlight">aide juridictionnelle (AJ)</span> acceptée</p>
         <p>(attribution de l'aide juridictionnelle aux personnes à faibles revenus)</p>
     </section>
 
     <section id="competences" class="section">
         <div class="container">
-            <h2>COMPETENCES</h2>
+            <h2>COMPÉTENCES</h2>
             <div class="services">
                 <div class="service">
                     <h3>Droit pénal</h3>
-                    <p>Comparution immédiate, convocation par officier de police judiciaire (COPJ), convocation par procès verbal (CPPV), contrôle judiciaire, tribunal correctionnel, de police, cour d'assises...</p>
+                    <p><span class="highlight">Comparution immédiate</span>, convocation par officier de police judiciaire (<span class="highlight">COPJ</span>), convocation par procès verbal (<span class="highlight">CPPV</span>), contrôle judiciaire, tribunal correctionnel, de police, cour d'assises...</p>
                 </div>
                 <div class="service">
                     <h3>Droit pénal des affaires</h3>
-                    <p>Conseil et défense des entreprises et particuliers (escroquerie, abus de biens sociaux, abus de confiance, prise illégale d'intérêts, corruption...) </p>
+                    <p>Conseil et défense des entreprises et particuliers (<span class="highlight">escroquerie</span>, <span class="highlight">abus de biens sociaux</span>, abus de confiance, prise illégale d'intérêts, <span class="highlight">corruption</span>...) </p>
                 </div>
                 <div class="service">
                     <h3>Droit de la presse</h3>
-                    <p>Diffamation, injure, fausse information sur un réseaux social (X, Instagram, Facebook...) ou dans un article de presse.</p>
+                    <p><span class="highlight">Diffamation</span>, <span class="highlight">injure</span>, fausse information sur un réseau social (X, Instagram, Facebook...) ou dans un article de presse.</p>
                 </div>
                 <div class="service">
                     <h3>Cyber</h3>
-                    <p>Mis en cause pour une infraction informatique - cyberharcèlement - suppression de données en ligne - gestion de crise et conseil en communication.</p>
+                    <p>Mis en cause pour une infraction informatique - <span class="highlight">cyberharcèlement</span> - suppression de données en ligne - gestion de crise et conseil en communication.</p>
                 </div>
             </div>
         </div>
@@ -224,47 +229,47 @@
             <div class="experience">
                 <div>
                     <span class="icone"></span>
-                    <span class="poste">Élève avocat - droit pénal</span>
+                    <span class="poste"><span class="highlight">Élève avocat</span> - droit pénal</span>
                 </div>
                 <div class="entreprise">Ministère de la Justice - Tribunal judiciaire de Créteil</div>
                 <div class="duree">janv. 2026 - juin 2026 · 6 mois</div>
-                <div class="lieu">Créteil </div>
+                <div class="lieu">Créteil</div>
             </div>
 
             <div class="experience">
                 <div>
                     <span class="icone"></span>
-                    <span class="poste">Élève avocat - droit pénal des affaires et droit de la presse </span>
+                    <span class="poste"><span class="highlight">Élève avocat</span> - droit pénal des affaires et droit de la presse</span>
                 </div>
                 <div class="entreprise">King & Spalding - Équipe "Special Matters and Government Investigations"</div>
                 <div class="duree">juil. 2025 - déc 2025 · 6 mois</div>
-                <div class="lieu">Paris </div>
+                <div class="lieu">Paris</div>
             </div>
 
             <div class="experience">
                 <div>
                     <span class="icone"></span>
-                    <span class="poste">Juriste stagiaire - droit pénal</span>
+                    <span class="poste"><span class="highlight">Juriste stagiaire</span> - droit pénal</span>
                 </div>
                 <div class="entreprise">Cabinet d'avocat Bluet</div>
-                <div class="duree">oct. 2023 - janv. 2025 · 4 mois </div>
-                <div class="lieu">Bordeaux </div>
+                <div class="duree">oct. 2023 - janv. 2025 · 4 mois</div>
+                <div class="lieu">Bordeaux</div>
             </div>
 
             <div class="experience">
                 <div>
                     <span class="icone"></span>
-                    <span class="poste">Juriste stagiaire - criminalité financière et organisée</span>
+                    <span class="poste"><span class="highlight">Juriste stagiaire</span> - criminalité financière et organisée</span>
                 </div>
                 <div class="entreprise">Parquet de Paris - JUNALCO</div>
                 <div class="duree">mai 2021 - juin 2021 · 2 mois</div>
                 <div class="lieu">Paris</div>
             </div>
 
-              <div class="experience">
+            <div class="experience">
                 <div>
                     <span class="icone"></span>
-                    <span class="poste">Athlète professionnel</span>
+                    <span class="poste"><span class="highlight">Athlète professionnel</span></span>
                 </div>
                 <div class="entreprise">Team Vitality</div>
                 <div class="duree">févr. 2017 - déc. 2018 · 1 an et 11 mois</div>
@@ -277,7 +282,7 @@
                 <div class="experience">
                     <div>
                         <span class="icone"></span>
-                        <span class="poste">Certificat d'aptitude à la profession d'avocat (CAPA)</span>
+                        <span class="poste"><span class="highlight">Certificat d'aptitude à la profession d'avocat (CAPA)</span></span>
                     </div>
                     <div class="entreprise">École des avocats de Paris (EFB)</div>
                     <div class="duree">2026</div>
@@ -286,7 +291,7 @@
                 <div class="experience">
                     <div>
                         <span class="icone"></span>
-                        <span class="poste">Master 2 - Lutte contre la criminalité financière et organisée  · Mention Bien</span>
+                        <span class="poste"><span class="highlight">Master 2</span> - Lutte contre la criminalité financière et organisée · Mention Bien</span>
                     </div>
                     <div class="entreprise">Université Aix-Marseille</div>
                     <div class="duree">2020 - 2021</div>
@@ -295,7 +300,7 @@
                 <div class="experience">
                     <div>
                         <span class="icone"></span>
-                        <span class="poste">Diplôme d'études supérieures universitaires (DESU) - Double compétence "Finance et droit pénal"  · Mention Très bien </span>
+                        <span class="poste"><span class="highlight">Diplôme d'études supérieures universitaires (DESU)</span> - Double compétence "Finance et droit pénal" · Mention Très bien</span>
                     </div>
                     <div class="entreprise">Université Aix-Marseille</div>
                     <div class="duree">2020 - 2021</div>
@@ -304,7 +309,7 @@
                 <div class="experience">
                     <div>
                         <span class="icone"></span>
-                        <span class="poste">Master 1 - Droit pénal et sciences criminelles · Mention Très bien</span>
+                        <span class="poste"><span class="highlight">Master 1</span> - Droit pénal et sciences criminelles · Mention Très bien</span>
                     </div>
                     <div class="entreprise">Université Aix-Marseille</div>
                     <div class="duree">2019 - 2020</div>
@@ -313,19 +318,19 @@
                 <div class="experience">
                     <div>
                         <span class="icone"></span>
-                        <span class="poste">Licence de Droit</span>
+                        <span class="poste"><span class="highlight">Licence de Droit</span></span>
                     </div>
                     <div class="entreprise">Université Jean Moulin Lyon III</div>
                     <div class="duree">2014 - 2018</div>
                 </div>
 
-                 <div class="Certifications">
-                    <h3>Certifications</h3>
+                <div class="Certifications">
+                    <h3>CERTIFICATIONS</h3>
 
                     <div class="experience">
                         <div>
                             <span class="icone"></span>
-                            <span class="poste">Certification AMF (habilitation à la fourniture de conseil en investissements financiers)</span>
+                            <span class="poste"><span class="highlight">Certification AMF</span> (habilitation à la fourniture de conseil en investissements financiers)</span>
                         </div>
                         <div class="entreprise">Autorité des marchés financiers (AMF) – France</div>
                     </div>
@@ -333,7 +338,7 @@
                     <div class="experience">
                         <div>
                             <span class="icone"></span>
-                            <span class="poste">Certification cybersécurité (MOOC SecNumEdu)</span>
+                            <span class="poste"><span class="highlight">Certification cybersécurité</span> (MOOC SecNumEdu)</span>
                         </div>
                         <div class="entreprise">ANSSI - Agence nationale de la sécurité des systèmes d'information</div>
                     </div>
@@ -344,20 +349,19 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact</h2>
-            <p>🚨 Urgence : urgence@wkavocat.fr</p>
-            <p></p>
-             <p style="margin-top: 1rem;">📞 Téléphone : 00 00 00 00 00</p>
-            <p>Pour des raisons de confidentialité, contactez ce numéro de préférence sur l'application Signal</p>
+            <h2>CONTACT</h2>
+            <p>🚨 <span class="highlight">Urgence</span> : urgence@wkavocat.fr</p>
+            <p style="margin-top: 1rem;">📞 Téléphone : 00 00 00 00 00</p>
+            <p>Pour des raisons de confidentialité, contactez ce numéro de préférence sur l'application <span class="highlight">Signal</span></p>
             <p>(à défaut Telegram, voire Whatsapp)</p>
             <p>✉ Mail : william.kolgar@avocat.fr</p>
             <p>📍 Adresse : 123 Rue de la Justice, 75000 Paris - 03000 Moulins</p>
         </div>
     </section>
 
-   <footer>
-    <p>&copy; 2026 Cabinet d'élève avocat KOLGAR. Tous droits réservés.</p>
-    <p><a href="mentions-legales.html" style="color: #f0f0f0;">Mentions légales</a></p>
-</footer>
+    <footer>
+        <p>&copy; 2026 Cabinet d'élève avocat KOLGAR. Tous droits réservés.</p>
+        <p><a href="mentions-legales.html" style="color: #ccc;">Mentions légales</a></p>
+    </footer>
 </body>
 </html>
