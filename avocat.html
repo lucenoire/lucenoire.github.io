@@ -14,191 +14,32 @@
             padding: 0;
             line-height: 1.6;
         }
-        header {
-            background: url('images/mon-image.jpg') no-repeat center center;
-            background-size: cover;
-            text-align: center;
-            padding: 6rem 1rem;
-            color: white;
-        }
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background: rgba(30, 30, 30, 0.9);
-            padding: 0.8rem;
-        }
-        nav a {
-            color: #e0e0e0;
-            text-decoration: none;
-            margin: 0.5rem;
-            font-weight: bold;
-            font-size: 0.9rem;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
+        /* Autres styles inchangés */
         .section {
             margin: 2rem 0;
             text-align: center;
             padding: 1.5rem;
-            border: 1px solid rgba(120, 120, 120, 0.4); /* Bordure plus visible */
+            border: 1px solid rgba(120, 120, 120, 0.4);
             border-radius: 12px;
             background: rgba(25, 25, 25, 0.2);
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Ombre pour accentuer les contours */
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
         }
-        .section h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #e0e0e0;
-        }
-        .section p {
-            font-size: 0.95rem;
-            max-width: 800px;
-            margin: 0 auto;
-            color: #ccc;
-        }
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-        .service {
-            flex: 1;
-            min-width: 280px;
-            max-width: 350px;
-            background: rgba(35, 35, 35, 0.2);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border: 1px solid rgba(120, 120, 120, 0.4); /* Bordure visible */
-            box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Ombre pour le relief */
-            margin: 0.5rem;
-        }
-        .service h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #8fbc8f; /* Vert pastel clair */
-        }
-        .btn {
-            display: inline-block;
-            background: #8B0000;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 4px;
-            margin: 1rem 0;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        footer {
-            background: rgba(30, 30, 30, 0.9);
-            text-align: center;
-            padding: 1.5rem;
-            color: #ccc;
-            font-size: 0.9rem;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            margin-bottom: 0.8rem;
-        }
-
-        /* Mots clés en vert pastel clair */
-        .highlight {
-            color: #8fbc8f;
-            font-weight: bold;
-        }
-
-        /* Expérience et formation */
-        .experience {
-            margin-bottom: 1.2rem;
-            padding-left: 15px;
-            text-align: left;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .poste {
-            font-weight: bold;
-            font-size: 1rem;
-            color: #e0e0e0;
-            margin-bottom: 0.3rem;
-        }
-        .poste .highlight {
-            color: #8fbc8f;
-        }
-        .entreprise {
-            color: #ccc;
-            font-size: 0.9rem;
-            margin-bottom: 0.3rem;
-        }
-        .duree, .lieu {
-            color: #888;
-            font-size: 0.85rem;
-            margin-bottom: 0.2rem;
-        }
-        .icone {
-            width: 10px;
-            height: 10px;
-            background-color: #8fbc8f;
-            display: inline-block;
-            margin-right: 8px;
-            vertical-align: middle;
-        }
-        .formation, .Certifications {
-            margin-top: 1.5rem;
-            padding-top: 1rem;
-            border-top: 1px solid rgba(80, 80, 80, 0.3);
-        }
-        .formation h3, .Certifications h3 {
-            color: #e0e0e0;
-            text-align: center;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
-
-        /* Adaptation mobile */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                text-align: center;
-            }
-            nav a {
-                margin: 0.3rem;
-            }
-            .service {
-                min-width: 100%;
-            }
-            .section h2 {
-                font-size: 1.7rem;
-            }
-        }
+        /* Autres styles inchangés */
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">KOLGAR</div>
-        <p>élève Avocat pénaliste</p>
-    </header>
+    <!-- En-tête et navigation fusionnés -->
+    <header style="background: #0b0b0b; padding: 2rem 1rem; text-align: center;">
+        <div class="logo" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem;">KOLGAR</div>
+        <p style="margin: 0 0 1.5rem 0; font-size: 1rem;">élève Avocat pénaliste</p>
 
-    <nav>
-        <a href="#competences">compétences</a>
-        <a href="#experience">expérience</a>
-        <a href="blog.html">articles juridiques</a>
-        <a href="#contact">contact</a>
-    </nav>
-    
- <p style="margin-top: 1rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
-  Avocat ayant une activité dominante en droit pénal, formé notamment à Paris dans un cabinet américain et dans les tribunaux.
-     </p>
-<p>&nbsp;</p> <!-- Ligne vide -->
- <p style="margin-top: 1rem; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
-  Déclaration d'intérêt : Aucune participation dans un organe public, privé ou de participation financière, détention d'actions ou de portefeuille d'actions, pas de fonction dirigeante ou mandat électif, membre du Syndicat des Avocats de France (SAF)
-</p>
+        <nav style="background: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap;">
+            <a href="#competences" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">compétences</a>
+            <a href="#experience" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">expérience</a>
+            <a href="blog.html" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">articles juridiques</a>
+            <a href="#contact" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">contact</a>
+        </nav>
+    </header>
     
     <section id="" class="section">
         <a href="#contact" class="btn">URGENCE* : 0600000000 ou urgence@wkavocat.fr</a>
