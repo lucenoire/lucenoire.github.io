@@ -44,9 +44,10 @@
             margin: 2rem 0;
             text-align: center;
             padding: 1.5rem;
-            border: 1px solid rgba(80, 80, 80, 0.5);
+            border: 1px solid rgba(120, 120, 120, 0.4); /* Bordure plus visible */
             border-radius: 12px;
-            background: rgba(25, 25, 25, 0.4); /* 30% plus transparent */
+            background: rgba(25, 25, 25, 0.2);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Ombre pour accentuer les contours */
         }
         .section h2 {
             font-size: 2rem;
@@ -70,20 +71,21 @@
             flex: 1;
             min-width: 280px;
             max-width: 350px;
-            background: rgba(35, 35, 35, 0.4); /* 30% plus transparent */
+            background: rgba(35, 35, 35, 0.2);
             padding: 1.5rem;
             border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(120, 120, 120, 0.4); /* Bordure visible */
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); /* Ombre pour le relief */
             margin: 0.5rem;
         }
         .service h3 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
-            color: #bff2b0; /* Vert pastel clair */
+            color: #A8D5BA; /* Vert pastel clair */
         }
         .btn {
             display: inline-block;
-            background: #dc143c;
+            background: #8B0000;
             color: white;
             padding: 0.8rem 1.5rem;
             text-decoration: none;
@@ -107,7 +109,7 @@
 
         /* Mots clés en vert pastel clair */
         .highlight {
-            color: #bff2b0;
+            color: #A8D5BA;
             font-weight: bold;
         }
 
@@ -127,7 +129,7 @@
             margin-bottom: 0.3rem;
         }
         .poste .highlight {
-            color: #bff2b0;
+            color: #A8D5BA;
         }
         .entreprise {
             color: #ccc;
@@ -142,7 +144,7 @@
         .icone {
             width: 10px;
             height: 10px;
-            background-color: #bff2b0;
+            background-color: #A8D5BA;
             display: inline-block;
             margin-right: 8px;
             vertical-align: middle;
@@ -191,8 +193,8 @@
     </nav>
 
     <section id="" class="section">
-        <a href="#contact" class="btn">Urgence : 0600000000</a>
-        <p style="margin-top: 1rem;">(notamment pour la famille d'une personne actuellement en <span class="highlight">garde à vue</span>)</p>
+        <a href="#contact" class="btn">Urgence* : 0600000000 ou urgence@wkavocat.fr</a>
+        <p style="margin-top: 1rem;">*Notamment en cas de convocation ou acte d'enquête imminent ou encore au cours d'une garde à vue par un membre de la famille du gardé à vue <span class="highlight">garde à vue</span>)</p>
         <p>Règlement des honoraires par l'<span class="highlight">aide juridictionnelle (AJ)</span> acceptée</p>
         <p>(attribution de l'aide juridictionnelle aux personnes à faibles revenus)</p>
     </section>
@@ -349,7 +351,6 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>CONTACT</h2>
-            <p>🚨 <span class="highlight">Urgence</span> : 0600000000 ou urgence@wkavocat.fr</p>
             <p style="margin-top: 1rem;">📞 Téléphone : 00 00 00 00 00</p>
             <p>Pour des raisons de confidentialité, contactez ce numéro de préférence sur l'application <span class="highlight">Signal</span></p>
             <p>(à défaut Telegram, voire Whatsapp)</p>
