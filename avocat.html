@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WILLIAM</title>
     <style>
-        /* Fond noir profond */
+        /* Styles existants (inchangés) */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #0b0b0b;
@@ -14,42 +14,59 @@
             padding: 0;
             line-height: 1.6;
         }
-        /* Autres styles inchangés */
         .section {
-            margin: 2rem 0;
+            margin: 2rem auto;
             text-align: center;
             padding: 1.5rem;
             border: 1px solid rgba(120, 120, 120, 0.4);
             border-radius: 12px;
             background: rgba(25, 25, 25, 0.2);
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+        }
+        .btn {
+            display: inline-block;
+            background: #8B0000;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1.1rem;
         }
         /* Autres styles inchangés */
     </style>
 </head>
 <body>
-    <!-- En-tête et navigation fusionnés -->
-    <header style="background: #0b0b0b; padding: 2rem 1rem; text-align: center;">
+    <!-- Titre "KOLGAR élève Avocat pénaliste" centré en haut de page -->
+    <div style="text-align: center; padding: 2rem 1rem; background: #0b0b0b;">
         <div class="logo" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem;">KOLGAR</div>
-        <p style="margin: 0 0 1.5rem 0; font-size: 1rem;">élève Avocat pénaliste</p>
+        <p style="margin: 0; font-size: 1rem;">élève Avocat pénaliste</p>
+    </div>
 
-        <nav style="background: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap;">
-            <a href="#competences" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">compétences</a>
-            <a href="#experience" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">expérience</a>
-            <a href="blog.html" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">articles juridiques</a>
-            <a href="#contact" style="color: #e0e0e0; text-decoration: none; margin: 0 1rem; font-weight: bold; font-size: 0.9rem;">contact</a>
-        </nav>
-    </header>
-    
-    <section id="" class="section">
+    <!-- Bannière noire avec les boutons de navigation -->
+    <nav style="background: #0b0b0b; padding: 1rem; text-align: center; border-top: 1px solid #333; border-bottom: 1px solid #333;">
+        <a href="#competences" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">compétences</a>
+        <a href="#experience" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">expérience</a>
+        <a href="blog.html" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">articles juridiques</a>
+        <a href="#contact" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">contact</a>
+    </nav>
+
+    <!-- Bouton "URGENCE" sous la bannière -->
+    <div style="text-align: center; padding: 1rem; background: #0b0b0b;">
         <a href="#contact" class="btn">URGENCE* : 0600000000 ou urgence@wkavocat.fr</a>
+    </div>
+
+    <!-- Reste du contenu -->
+    <section id="" class="section">
         <p style="margin-top: 1rem;">
-  *Notamment en cas de convocation ou acte d'enquête imminent ou encore au cours d'une garde à vue si vous êtes un membre de la famille du <span class="highlight">gardé à vue.</span>
-</p>
-<p>&nbsp;</p> <!-- Ligne vide -->
-<p>
-  Règlement des honoraires par l'<span class="highlight">aide juridictionnelle (AJ)</span> acceptée
-</p>
+          *Notamment en cas de convocation ou acte d'enquête imminent ou encore au cours d'une garde à vue si vous êtes un membre de la famille du <span class="highlight">gardé à vue.</span>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          Règlement des honoraires par l'<span class="highlight">aide juridictionnelle (AJ)</span> acceptée
+        </p>
         <p>(attribution de l'aide juridictionnelle aux personnes à faibles revenus)</p>
     </section>
 
