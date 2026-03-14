@@ -22,7 +22,11 @@
         @media (max-width: 768px) {
             body {
                 background: url('fondtest3.png') no-repeat center center;
-                background-size: cover;
+                background-size: 100% 100%; /* L'image prend exactement la taille de l'écran */
+    min-height: 100vh; /* Hauteur minimale = hauteur de l'écran */
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
             }
             nav {
                 padding: 0.5rem;
