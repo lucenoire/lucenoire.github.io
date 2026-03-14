@@ -29,7 +29,45 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+ /* Adaptation pour smartphones */
+        @media (max-width: 768px) {
+    body {
+        background: url('fondtest3.png') no-repeat center center;
+        background-size: cover;
+        background-attachment: scroll; /* Permet le défilement fluide sur mobile */
+            }
+        }
 
+        .section {
+            margin: 2rem auto;
+            text-align: center;
+            padding: 1.5rem;
+            border: 1px solid rgba(120, 120, 120, 0.4);
+            border-radius: 12px;
+            background: rgba(25, 25, 25, 0.2);
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+            max-width: 1200px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #C25B60;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            color: #8fbc8f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
         /* Bannière de navigation */
         nav {
             background: rgba(11, 11, 11, 0.7);
