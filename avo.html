@@ -8,7 +8,7 @@
         /* Réinitialisation et fond d'écran */
         body {
             font-family: 'Arial', sans-serif;
-            background: url('fontestmobile3.png') no-repeat center center;
+            background: url('fontestmobilenuage.png') no-repeat center center;
             background-size: cover;
             color: #e0e0e0;
             margin: 0;
@@ -23,10 +23,19 @@
         /* Fond d'écran mobile (corrigé) */
         @media (max-width: 768px) {
             body {
-                background: url('fontestmobile3.png') no-repeat center center;
+                background: url('fontestmobilenuage.png') no-repeat center center;
                 background-size: cover; /* Couvre tout l'écran */
                 background-attachment: scroll;
             }
+            .urgence-section {
+        display: flex;
+        justify-content: center; /* Centrage horizontal */
+        align-items: center; /* Centrage vertical */
+    }
+
+    .btn {
+        width: auto; /* Largeur automatique pour éviter l'étirement */
+    }
         }
 
         /* Conteneurs pour centrer le texte */
@@ -86,6 +95,8 @@
             text-decoration: none;
             border-radius: 4px;
             font-weight: bold;
+            margin: 0 auto; /* Centrage explicite */
+            max-width: 90%; /* Évite le débordement sur petits écrans */
         }
 
         /* Conteneur des sections (pour le centrage) */
@@ -247,7 +258,7 @@
     </section>
 
     <!-- Pied de page -->
-    <footer style="background: rgba(30, 30, 30, 0.9); text-align: center; padding: 1.5rem; width: 100%;">
+    <footer style="background: transparent ; text-align: center; padding: 1.5rem; width: 100%;">
         <p style="margin: 0;">&copy; 2026 Cabinet d'élève avocat KOLGAR. Tous droits réservés.</p>
         <p style="margin: 0;"><a href="mentions-legales.html" style="color: #ccc;">Mentions légales</a></p>
     </footer>
