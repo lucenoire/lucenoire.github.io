@@ -64,6 +64,7 @@
             padding: 2rem 0;
             width: 100%;
             text-align: center;
+            background: transparent; /* Supprime le fond grisé */
         }
         .logo {
             font-size: 2rem;
@@ -77,6 +78,7 @@
             padding: 1rem;
             width: 100%;
             text-align: center;
+            background: transparent; /* Supprime le fond grisé */
         }
         .btn {
             display: inline-block;
@@ -88,14 +90,18 @@
             font-weight: bold;
         }
 
-        /* Sections génériques */
-        .section {
-            width: 100%;
-            margin: 2rem 0;
-            text-align: justify;
-        }
-        .section h2 {
-            text-align: center;
+        /* Conteneur des sections (pour le centrage) */
+.section {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center; /* Centrage des titres et éléments non-texte */
+}
+
+/* Texte JUSTIFIÉ uniquement pour les paragraphes */
+.section p {
+    text-align: justify;
+    max-width: 800px; /* Largeur max pour une lecture confortable */
+    margin: 0 auto; /* Centrage du bloc de texte */
         }
 
         /* Pied de page */
