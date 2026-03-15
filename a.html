@@ -150,7 +150,7 @@
     <!-- Texte justifié -->
     <section class="section">
         <div class="container">
-            <p>Règlement des honoraires par l'<span class="highlight">aide juridictionnelle (AJ)</span> acceptée (paiement de l'avocat par l'Etat en cas de faibles revenus).</p>
+            <p><span class="highlight">Aide juridictionnelle (AJ)</span> acceptée (paiement des honoraires l'avocat par l'Etat en cas de faibles revenus).</p>
         </div>
     </section>
 
@@ -160,24 +160,24 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Espace entre les éléments */
-    justify-content: space-between;
+    justify-content: flex-start; /* Alignement à gauche */
 }
 
 /* Chaque service */
 .service {
-    flex: 1 1 calc(50% - 20px); /* 2 éléments par ligne */
-    min-width: 300px;
+    width: calc(50% - 20px); /* Largeur fixe à 50% (moins l'espace du gap) */
+    min-width: unset; /* Désactive la largeur minimale */
     padding: 20px;
-    border: none; /* Pas de bordure visible */
-    border-radius: 5px; /* Coins arrondis */
-    background-color: transparent; /* Fond transparent */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Ombre pour le relief */
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Pour les écrans plus petits (responsive) */
 @media (max-width: 768px) {
     .service {
-        flex: 1 1 100%; /* 1 élément par ligne sur mobile */
+        width: 100%; /* 1 bloc par ligne sur mobile */
     }
 }
 
