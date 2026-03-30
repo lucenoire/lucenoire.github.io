@@ -1,12 +1,314 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>Mon Site Web</title>
-    <meta charset="utf-8">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Maître KOLGAR",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moulins",
+    "postalCode": "03000",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Moulins", "Paris"],
+  "telephone": "+33600000000",
+  "description": "Avocat pénaliste - intervention en urgence 24h/24"
+}
+</script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avocat pénaliste Moulins (03) - Urgence 24h/24 | Maître KOLGAR</title>
+    <meta name="description" content="Avocat pénaliste à Moulins (Allier). Intervention en urgence 24h/24 : garde à vue, comparution immédiate, droit pénal. Déplacements à Paris.">
+    <!-- Intégration de Roboto depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Réinitialisation et fond d'écran */
+        body {
+            font-family: 'Roboto', sans-serif; /* Police principale */
+            background: url('fondnoirtexture14.png') no-repeat center center;
+            background-size: cover;
+            color: #EDEDE4;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Fond d'écran mobile (corrigé) */
+        @media (max-width: 768px) {
+            body {
+                background: url('fondnoirtexture14.png') no-repeat center center;
+                background-size: cover; /* Couvre tout l'écran */
+                background-attachment: scroll;
+            }
+            .urgence-section {
+        display: flex;
+        justify-content: center; /* Centrage horizontal */
+        align-items: center; /* Centrage vertical */
+    }
+
+    .btn {
+        width: auto; /* Largeur automatique pour éviter l'étirement */
+    }
+        }
+
+        /* Conteneurs pour centrer le texte */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Bannière de navigation (corrigée : liens en blanc) */
+        nav {
+            background: transparent; /* Fond TOTALMENT transparent */;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+            margin-top: 2rem; /* Décale la barre de navigation vers le bas */
+        }
+        nav a {
+            color: #EDEDE4; /* Blanc (comme avant) */
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            font-size: 1.1rem; /* Taille de police augmentée */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombre légère */
+        }
+        /* Supprime le surlignage violet au clic */
+        nav a:visited, nav a:active {
+            color: #e0e0e0; /* Reste blanc même après clic */
+        }
+
+        /* Section "KOLGAR élève-avocat pénaliste" (centrée) */
+        .logo-section {
+            background: rgba(11, 11, 11, 0.5);
+            padding: 2rem 0;
+            width: 100%;
+            text-align: center;
+            background: transparent; /* Supprime le fond grisé */
+            margin-top: 2rem; /* Décale le logo vers le bas */
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0 auto;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* Ombre légère */
+        }
+
+        /* Bouton URGENCE */
+        .urgence-section {
+    background-color: transparent; /* Fond 100% transparent */
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+            
+        }
+        .btn {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 12px; /* Angles plus arrondis */
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 90%;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5); /* Ombres plus larges */
+    transition: all 0.3s ease; /* Animation douce au survol (optionnel) */
+}
+
+.btn:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7); /* Ombres encore plus marquées au survol */
+    transform: translateY(-2px); /* Légère élévation (optionnel) */
+}
+
+        /* Conteneur des sections (pour le centrage) */
+.section {
+    width: 100%;
+    margin: 5rem 0; /* augmente l'espace */
+    text-align: center; /* Centrage des titres et éléments non-texte */
+}
+
+/* Texte JUSTIFIÉ uniquement pour les paragraphes */
+.section p {
+    text-align: justify;
+    max-width: 800px; /* Largeur max pour une lecture confortable */
+    margin: 0 auto; /* Centrage du bloc de texte */
+        }
+
+        /* Pied de page */
+        footer {
+            background: rgba(30, 30, 30, 0.9);
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            margin-top: auto;
+        }
+
+        /* Contenu textuel en gris (sauf titres) */
+.section p,
+.section a:not(.btn),
+.service p {
+    color: #BFBFBF; /* Gris clair */
+}
+
+/* Conserve la couleur d'origine pour les titres */
+.section h2,
+.section h3 {
+    color: #EDEDE4; /* Ou la couleur actuelle de ton choix */
+}
+
+.formation-title {
+    margin-top: 10rem;
+}
+        
+    </style>
 </head>
 <body>
-    <h1>Avocat !</h1>
-    <p>Avocat droit pénal - urgence - paris.</p>
+    <h1 style="position:absolute; left:-9999px;">
+Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, urgence 24h/24
+</h1>
+    <!-- Navigation (liens en blanc, sans surlignage) -->
+    <nav>
+        <a href="#competences">compétences</a>
+        <a href="#experience">expérience</a>
+        <a href="blog.html">articles juridiques</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <!-- Section "KOLGAR élève-avocat pénaliste" (centrée) -->
+    <div class="logo-section">
+        <div class="logo">Maître KOLGAR William</div>
+        <p style="margin: 0.5rem auto; text-align: center;">
+            <i>AVOCAT PENALISTE</i>
+        </p>
+    </div>
+
+    <!-- Bouton URGENCE -->
+    <div class="urgence-section">
+        <a href="#contact" class="btn">Contact : 0600000000 ou william.kolgar@avocat.fr</a>
+        <p style="text-align: center; font-size: 0.9rem; margin-top: 0.5rem;">
+        </p>
+    </div>
+
+    <!-- Texte justifié -->
+    <section class="section" style="margin-top:2rem;">
+    <div class="container">
+        <p style="font-size:0.95rem; color:#888;">
+        Maître KOLGAR, avocat pénaliste à Moulins (Allier), intervient en droit pénal général,
+        en comparution immédiate, garde à vue et droit pénal des affaires.
+        Il intervient à Moulins, Vichy, Montluçon ainsi qu’à Paris pour les dossiers pénaux complexes.
+        Disponible 24h/24 pour toute urgence.
+        </p>
+    </div>
+</section>
+
+<style>
+/* Conteneur des services */
+.services {
+    display: grid; /* Utilise CSS Grid pour un contrôle précis */
+    grid-template-columns: 1fr 1fr; /* 2 colonnes de même largeur */
+    gap: 20px; /* Espace entre les éléments */
+    width: 100%; /* Prend toute la largeur disponible */
+}
+
+.service {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Optionnel : pour les écrans mobiles */
+@media (max-width: 768px) {
+    .services {
+        grid-template-columns: 1fr; /* 1 colonne sur mobile */
+    }
+}
+
+
+</style>
+
+<section id="competences" class="section">
+    <div class="container">
+        <h2>COMPÉTENCES</h2>
+        <div class="services">
+            <div class="service">
+                <h3>DROIT PÉNAL</h3>
+                <p><span class="highlight">Comparution immédiate</span>, convocation par officier de police judiciaire (<span class="highlight">COPJ</span>), convocation par procès verbal (<span class="highlight">CPPV</span>), contrôle judiciaire, tribunal correctionnel, de police, cour d'assises...</p>
+            </div>
+            <div class="service">
+                <h3>DROIT PÉNAL DES AFFAIRES</h3>
+                <p>Conseil et défense des entreprises et particuliers (<span class="highlight">escroquerie</span>, <span class="highlight">abus de biens sociaux</span>, abus de confiance, prise illégale d'intérêts, <span class="highlight">corruption</span>...) </p>
+            </div>
+            <div class="service">
+                <h3>DROIT DE LA PRESSE</h3>
+                <p><span class="highlight">Diffamation</span>, <span class="highlight">injure</span>, fausse information sur un réseau social (X, Instagram, Facebook...) ou dans un article de presse.</p>
+            </div>
+            <div class="service">
+                <h3>CYBER</h3>
+                <p>Mis en cause pour une infraction informatique - <span class="highlight">cyberharcèlement</span> - suppression de données en ligne - gestion de crise et conseil en communication.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- EXPÉRIENCE (complète) -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>EXPÉRIENCE</h2>
+            <div class="service">
+                <p><span class="highlight">Passé par le cabinet d'avocats américain King & Spalding, le parquet criminalité financière et organisée de Paris (JUNALCO), le tribunal judiciaire de Créteil, différents cabinets, et ancien athlète professionnel d'e-sport pour Team Vitality.</p>
+            </div>
+
+            <h2 class="formation-title">FORMATION</h2>
+            <div class="service">
+                <p><span class="highlight">Diplômé de l’École des avocats de Paris (EFB), du DESU en droit pénal financier (mention Très bien), du Master 2 en droit pénal des affaires (mention Bien), et du Master 1 en droit pénal et sciences criminelles (mention Très bien) de l’Université Aix-Marseille, d’une licence de Droit de l’Université Jean Moulin Lyon III et titulaire de la certification de l'Autorité des Marchés Financiers (AMF).</span><br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <p style="margin-top:2rem;">
+Intervention également à <a href="avocat-penaliste-paris.html">Paris</a>
+</p>
+    
+    <!-- CONTACT -->
+<section id="contact" class="section">
+    <div class="container">
+        <h2>CONTACT</h2> <!-- Titre exclu dans l'encadré -->
+        <div class="service"> <!-- Ajoute cette ligne -->
+            <p>
+📞 <a href="tel:+33600000000">06 00 00 00 00</a><br>
+✉ <a href="mailto:william.kolgar@avocat.fr">william.kolgar@avocat.fr</a><br><br>
+
+📍 Cabinet principal : Moulins (03000 - Allier)<br>
+Intervention : Moulins, Vichy, Montluçon, Clermont-Ferrand, Paris et toute la France
+</p>
+        </div> <!-- Ajoute cette ligne -->
+    </div>
+</section>
+
+    <p style="font-size:0.8rem; color:#666;">
+avocat pénaliste moulins - avocat garde à vue moulins - avocat comparution immédiate allier - avocat pénal paris
+</p>
+
+
+    <!-- Pied de page -->
+    <footer style="background: transparent ; text-align: center; padding: 1.5rem; width: 100%;">
+        <p style="margin: 0;">&copy; 2026 Cabinet d'avocat KOLGAR. Tous droits réservés.</p>
+        <p style="margin: 0;"><a href="mentions-legales.html" style="color: #ccc;">Mentions légales</a></p>
+    </footer>
 </body>
-    <a href="test.html">Aller vers la page de test</a>
 </html>
