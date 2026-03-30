@@ -96,17 +96,24 @@
             
         }
         .btn {
-            display: inline-block;
-            background: transparent;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            margin: 0 auto; /* Centrage explicite */
-            max-width: 90%; /* Évite le débordement sur petits écrans */
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-        }
+    display: inline-block;
+    background: transparent;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 12px; /* Angles plus arrondis */
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 90%;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5); /* Ombres plus larges */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordure légère pour le contraste */
+    transition: all 0.3s ease; /* Animation douce au survol (optionnel) */
+}
+
+.btn:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7); /* Ombres encore plus marquées au survol */
+    transform: translateY(-2px); /* Légère élévation (optionnel) */
+}
 
         /* Conteneur des sections (pour le centrage) */
 .section {
