@@ -85,14 +85,31 @@ nav a {
 /* BOUTON */
 .btn {
     display: inline-block;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.08); /* effet verre léger */
     color: white;
     padding: 0.8rem 1.5rem;
+    text-decoration: none;
     border-radius: 12px;
     font-weight: bold;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.5);
-    border: 1px solid rgba(255,255,255,0.2);
-    backdrop-filter: blur(6px);
+    margin: 0 auto;
+    max-width: 90%;
+
+    backdrop-filter: blur(8px); /* effet glass */
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 
+        0 10px 35px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255,255,255,0.1); /* effet lumière subtil */
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 
+        0 15px 45px rgba(0, 0, 0, 0.7),
+        inset 0 1px 0 rgba(255,255,255,0.2);
+
+    transform: translateY(-3px) scale(1.02); /* plus premium */
 }
 
 /* SECTION */
