@@ -87,7 +87,7 @@ nav a {
 /* BOUTON */
 .btn {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.02); /* 👈 au lieu de 0.03 */
+    background: rgba(255, 255, 255, 0.03); /* effet verre léger */
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -96,19 +96,19 @@ nav a {
     margin: 0 auto;
     max-width: 90%;
 
-    backdrop-filter: blur(5px); /* 👈 au lieu de 8px */
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px); /* effet glass */
+    -webkit-backdrop-filter: blur(8px);
 
     box-shadow: 
-        0 8px 25px rgba(0, 0, 0, 0.4), /* 👈 allégé */
-        inset 0 1px 0 rgba(255,255,255,0.08);
+        0 10px 35px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255,255,255,0.1); /* effet lumière subtil */
 
     transition: all 0.3s ease;
 }
   
 .btn:hover {
     box-shadow: 
-        0 12px 35px rgba(0, 0, 0, 0.6),
+        0 15px 45px rgba(0, 0, 0, 0.7),
         inset 0 1px 0 rgba(255,255,255,0.05);
 
     transform: translateY(-3px) scale(1.02); /* plus premium */
@@ -139,6 +139,11 @@ nav a {
 .service {
     padding: 20px;
     box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+  
+  #contact .service p {
+    text-align: center;
+    margin: 10px 0;
 }
 
 /* TITRES */
@@ -265,7 +270,8 @@ Disponible 24h/24 pour toute urgence.
 </section>
 
 <p style="text-align:center;">
-Intervention également à <a href="avocat-penaliste-paris.html">Paris</a>
+Intervention sur tout le territoire national (<a href="avocat-penaliste-paris.html">Paris</a>, Lyon, Moulins, Vichy, Montluçon, Clermont-Ferrand...).
+  Avocat inscrit au Barreau de Moulins.
 </p>
 
 <section id="contact" class="section">
@@ -283,7 +289,6 @@ Intervention également à <a href="avocat-penaliste-paris.html">Paris</a>
 
   <p>
     📍 Cabinet principal : Moulins (03000 - Allier)<br>
-    Intervention sur tout le territoire national (Paris, Lyon, Moulins, Vichy, Montluçon, Clermont-Ferrand...)
   </p>
 </div>
   
