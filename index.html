@@ -76,6 +76,7 @@ nav a {
 .logo-section {
     text-align: center;
     margin-top: 2rem;
+    margin-bottom: 4rem; /* ajoute ça */
 }
 
 .logo {
@@ -86,7 +87,7 @@ nav a {
 /* BOUTON */
 .btn {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.03); /* effet verre léger */
+    background: rgba(255, 255, 255, 0.02); /* 👈 au lieu de 0.03 */
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
@@ -95,19 +96,19 @@ nav a {
     margin: 0 auto;
     max-width: 90%;
 
-    backdrop-filter: blur(8px); /* effet glass */
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px); /* 👈 au lieu de 8px */
+    -webkit-backdrop-filter: blur(5px);
 
     box-shadow: 
-        0 10px 35px rgba(0, 0, 0, 0.5),
-        inset 0 1px 0 rgba(255,255,255,0.1); /* effet lumière subtil */
+        0 8px 25px rgba(0, 0, 0, 0.4), /* 👈 allégé */
+        inset 0 1px 0 rgba(255,255,255,0.08);
 
     transition: all 0.3s ease;
 }
-
+  
 .btn:hover {
     box-shadow: 
-        0 15px 45px rgba(0, 0, 0, 0.7),
+        0 12px 35px rgba(0, 0, 0, 0.6),
         inset 0 1px 0 rgba(255,255,255,0.05);
 
     transform: translateY(-3px) scale(1.02); /* plus premium */
@@ -115,7 +116,7 @@ nav a {
 
 /* SECTION */
 .section {
-    margin: 5rem 0;
+    margin: 6rem 0;
     text-align: center;
     width: 100%;
 }
@@ -182,7 +183,7 @@ footer {
 <body>
 
 <!-- H1 SEO INVISIBLE -->
-<h1 style="position:absolute; left:-9999px;">
+<h1 style="position:absolute; left:-9999px; height:1px; overflow:hidden;">
 Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, urgence 24h/24
 </h1>
 
@@ -211,7 +212,7 @@ Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, ur
 <div class="container">
 <p>
 Intervention à chaque stade de la procédure (garde à vue, audition libre, instruction, CRPC, alternative aux poursuites, comparution immédiate, COPJ, CPPV, tribunal correctionnel, cour d’assises, cour criminelle départementale).
-Traitement de dossiers pénaux complexes et défense des prévenus et acussés comme des victimes parties civiles. 
+Traitement de dossiers pénaux complexes et défense des accusés et prévenus comme des victimes parties civiles. 
 Disponible 24h/24 pour toute urgence.
 </p>
 </div>
@@ -225,7 +226,7 @@ Disponible 24h/24 pour toute urgence.
 
 <div class="service">
 <h3>DROIT PÉNAL COMMUN</h3>
-<p>Violences, vol, harcèlement, trafic de stupéfiants... </p>
+<p>Violences intrafamiliales, sexuelles et sexistes, dégradations, vol, harcèlement, trafic de stupéfiants... </p>
 </div>
 
 <div class="service">
@@ -240,7 +241,7 @@ Disponible 24h/24 pour toute urgence.
 
 <div class="service">
 <h3>CYBER</h3>
-<p>Cyberharcèlement, atteintes aux Systèmes de traitement automatisé de données, atteinte à la vie privée, suppression de contenu...</p>
+<p>Cyberharcèlement, atteintes aux Systèmes de traitement automatisé de données, atteinte à la vie privée, usurpation d'identité, suppression de contenu...</p>
 </div>
 
 </div>
@@ -290,7 +291,7 @@ Intervention également à <a href="avocat-penaliste-paris.html">Paris</a>
 </section>
 
 <!-- BOOST SEO -->
-<p style="font-size:0.8rem; color:#666; text-align:center;">
+<p style="font-size:0.7rem; opacity:0.5; text-align:center;">
 avocat pénaliste moulins - avocat garde à vue moulins - avocat comparution immédiate allier - avocat pénal paris
 </p>
 
