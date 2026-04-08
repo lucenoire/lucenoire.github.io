@@ -87,31 +87,21 @@ nav a {
 /* BOUTON */
 .btn {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.02); /* effet verre léger */
+    background: transparent;
     color: white;
     padding: 0.8rem 1.5rem;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 12px; /* Angles plus arrondis */
     font-weight: bold;
     margin: 0 auto;
     max-width: 90%;
-
-    backdrop-filter: blur(5px); /* effet glass */
-    -webkit-backdrop-filter: blur(5px);
-
-    box-shadow: 
-        0 8px 25px rgba(0, 0, 0, 0.4),
-        inset 0 1px 0 rgba(255,255,255,0.05); /* effet lumière subtil */
-
-    transition: all 0.3s ease;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5); /* Ombres plus larges */
+    transition: all 0.3s ease; /* Animation douce au survol (optionnel) */
 }
-  
-.btn:hover {
-    box-shadow: 
-        0 15px 45px rgba(0, 0, 0, 0.7),
-        inset 0 1px 0 rgba(255,255,255,0.02); /* 👈 quasi invisible */
 
-    transform: translateY(-3px) scale(1.02);
+.btn:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7); /* Ombres encore plus marquées au survol */
+    transform: translateY(-2px); /* Légère élévation (optionnel) */
 }
 
 /* SECTION */
