@@ -79,12 +79,44 @@ nav a {
     margin-top: 4rem;
     margin-bottom: 16rem; /* espace sous le logo */
     color: #D9D9D9;
+    letter-spacing: 0.5em;
 }
 
 .logo {
     font-size: 2rem;
     font-weight: bold;
     color: #F2F2F2;
+    letter-spacing: 0.20em;
+}
+
+/* BOUTON */
+.btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.02); /* effet verre léger */
+    color: #949494;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: normal;
+    margin: 0 auto;
+    max-width: 90%;
+
+    backdrop-filter: blur(5px); /* effet glass */
+    -webkit-backdrop-filter: blur(5px);
+
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255,255,255,0.05); /* effet lumière subtil */
+
+    transition: all 0.3s ease;
+}
+  
+.btn:hover {
+    box-shadow: 
+        0 15px 45px rgba(0, 0, 0, 0.7),
+        inset 0 1px 0 rgba(255,255,255,0.02); /* 👈 quasi invisible */
+
+    transform: translateY(-3px) scale(1.02);
 }
 
 /* SECTION */
@@ -118,12 +150,35 @@ nav a {
     box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
   
-/* TITRES */
-h2, h3 {
-    color: #BFBFBF;
-  letter-spacing: 0.25em;
+  #contact .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
+  #contact .service p {
+    text-align: center;
+    color: #ADADAD ;
+    margin: 5px 0;
+    width: 100%;
+}
+  
+/* TITRES */
+h2 {
+    color: #BFBFBF;
+    letter-spacing: 0.25em;
+}
+
+h3 {
+    color: #BFBFBF;
+    letter-spacing: 0.05em;
+}
+  
 /* COULEURS DES LIENS CLIQUABLES */
   a {
   color: inherit;
@@ -160,7 +215,6 @@ footer {
         margin: 0;
         font-size: 0.9rem;
     }
-  
     .services {
         grid-template-columns: 1fr;
     }
@@ -178,17 +232,17 @@ Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, ur
 </h1>
 
 <nav>
-<a href="index.html#competences"">compétences</a>
-<a href="index.html#experience">expérience</a>
+<a href="#competences">compétences</a>
+<a href="#experience">expérience</a>
 <a href="articles-juridiques.html">articles juridiques</a>
-<a href="index.html#contact">contact</a>
+<a href="#contact">contact</a>
 </nav>
 
 <main>
 
 <div class="logo-section">
-<div class="logo"><a href="index.html">M a î t r e&nbsp;&nbsp;&nbsp;&nbsp;K O L G A R&nbsp;&nbsp;&nbsp;&nbsp;W i l l i a m</a></div>
-<p><i>A&nbsp;&nbsp;V&nbsp;&nbsp;O&nbsp;&nbsp;C&nbsp;&nbsp;A&nbsp;&nbsp;T</i></p>
+<div class="logo"><a href="index.html">Maître KOLGAR William</a></div>
+<p><i>AVOCAT</i></p>
 </div>
 
   <section class="section">
