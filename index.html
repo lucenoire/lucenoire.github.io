@@ -70,6 +70,7 @@ nav a {
     margin: 0 1rem;
     text-decoration: none;
     font-weight: 500;
+    display: inline-block;
 }
 
 /* LOGO */
@@ -195,6 +196,18 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
+  nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+}
     .services {
         grid-template-columns: 1fr;
     }
