@@ -132,7 +132,12 @@ body{
     margin:0;
 
     flex-shrink:0;
-
+  
+    position: absolute; /* 👈 Ajoute cette ligne */
+  
+    left: 20px; /* 👈 Déplace le logo à gauche */
+  
+    top: 20px; /* 👈 Aligne le logo en haut */
 }
 
 .logo-titre{
@@ -157,6 +162,12 @@ nav{
 
     gap:18px;
 
+    margin: 0 auto; /* 👈 Centre la navigation */
+  
+    width: 100%; /* 👈 Prend toute la largeur disponible */
+  
+    justify-content: center; /* 👈 Centre les liens de navigation */
+  
 }
 
 nav a{
@@ -195,11 +206,11 @@ nav a:hover{
 
     margin-top:1rem;
 
-    margin-bottom:10rem;
+    margin-bottom:14rem;
 
     color:#D9D9D9;
 
-    letter-spacing:.5em;
+    letter-spacing:0.5em;
 
 }
 
@@ -435,6 +446,8 @@ footer{
 
     padding:12px 15px;
 
+   position: relative; /* 👈 Ajoute cette ligne pour le positionnement du logo */
+  
 }
 
 .logo-titre{
@@ -445,10 +458,22 @@ footer{
 
 }
 
+
+.logo-link {
+  
+    left: 15px; /* 👈 Ajuste la position du logo sur mobile */
+  
+    top: 15px;
+  
+    }
+
+
+  
 nav{
 
     gap:4px;
 
+    justify-content: center; /* 👈 Centre la navigation sur mobile 
 }
 
 nav a{
@@ -471,7 +496,7 @@ nav a{
 
     margin-top:1rem;
 
-    margin-bottom:2rem;
+    margin-bottom:8rem;
 
 }
 
