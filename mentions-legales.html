@@ -6,11 +6,18 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title> KOLGAR William - avocat pénaliste </title>
+<title>KOLGAR William - avocat pénaliste</title>
+
 <meta name="description" content="Avocat pénaliste à Moulins (Allier). Intervention en urgence 24h/24 : garde à vue, comparution immédiate, droit pénal. Déplacements à Paris.">
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="site.webmanifest">
+
 <!-- SEO STRUCTURÉ -->
 <script type="application/ld+json">
 {
@@ -31,195 +38,511 @@
 
 <style>
 
-/* FIX GLOBAL */
-* {
-    box-sizing: border-box;
+/* =========================
+   RESET
+========================= */
+
+*{
+    box-sizing:border-box;
 }
 
-/* BODY */
-body {
-    font-family: 'Roboto', sans-serif;
-    background: url('test4000x6000-A7.jpeg') no-repeat center center;
-    background-size: cover;
-    background-color: #0b0b0b;
-    color: #707070;
-    margin: 0;
-    min-height: 100vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x:hidden;
 }
 
-/* CONTAINER */
-.container {
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family:'Roboto',sans-serif;
+
+    background:url('test4000x6000-A7.jpeg') no-repeat center center;
+
+    background-size:cover;
+
+    background-color:#0b0b0b;
+
+    color:#707070;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:0 20px;
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo-link{
+
+    display:block;
+
+    padding:0;
+
+    margin:0;
+
+    flex-shrink:0;
+  
+    position: absolute; /* 👈 Ajoute cette ligne */
+  
+    left: 20px; /* 👈 Déplace le logo à gauche */
+  
+    top: 20px; /* 👈 Aligne le logo en haut */
+}
+
+.logo-titre{
+
+    width:45px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin: 0 auto; /* 👈 Centre la navigation */
+  
+    width: 100%; /* 👈 Prend toute la largeur disponible */
+  
+    justify-content: center; /* 👈 Centre les liens de navigation */
+  
+}
+
+nav a{
+
+    color:#C4C4C4;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    white-space:nowrap;
+
+    padding:6px 10px;
+
+    border-radius:8px;
+
+    transition:.25s;
+
+    border-bottom:1px solid transparent;
+
+}
+
+nav a:hover{
+
+    background:rgba(255,255,255,.06);
+
+    border-bottom:1px solid currentColor;
+
+}
+
+    /* =========================
+   TITRE PRINCIPAL
+========================= */
+
+.logo-section{
+
+    text-align:center;
+
+    margin-top:1rem;
+
+    margin-bottom:18rem;
+
+    color:#D9D9D9;
+
+    letter-spacing:0.5em;
+
+}
+
+.titre-cliquable{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    display:inline-block;
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:#F2F2F2;
+
+    letter-spacing:.20em;
+
+}
+
+/* =========================
+   BOUTONS
+========================= */
+
+.btn{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.02);
+
+    color:#949494;
+
+    padding:.8rem 1.5rem;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    backdrop-filter:blur(5px);
+
+    -webkit-backdrop-filter:blur(5px);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.70),
+        inset 0 1px 0 rgba(255,255,255,.02);
+
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* NAV */
-nav {
-    margin-top: 2rem;
+    margin: 0 auto 4rem auto; /* Marge verticale seulement (haut/bas) */
+    margin-bottom: 4rem; /* Espacement entre chaque section */
     text-align: center;
 }
 
-nav a {
-    color: #C4C4C4;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-block;
+#competences, #experience, #contact {
+    margin-top: 3rem; /* Espacement avant la section */
 }
 
-/* LOGO */
-.logo-section {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 16rem; /* espace sous le logo */
-    color: #D9D9D9;
-    letter-spacing: 0.5em;
-}
-
-.logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #F2F2F2;
-    letter-spacing: 0.20em;
-}
-
-/* BOUTON */
-.btn {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.02); /* effet verre léger */
-    color: #949494;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 12px;
-    font-weight: normal;
-    margin: 0 auto;
-    max-width: 90%;
-
-    backdrop-filter: blur(5px); /* effet glass */
-    -webkit-backdrop-filter: blur(5px);
-
-    box-shadow: 
-        0 8px 25px rgba(0, 0, 0, 0.4),
-        inset 0 1px 0 rgba(255,255,255,0.05); /* effet lumière subtil */
-
-    transition: all 0.3s ease;
+/* Espacement spécial pour FORMATION (qui est un h2 dans #experience) */
+.formation-title {
+    margin-top: 6rem; /* Espacement avant "FORMATION" */
 }
   
-.btn:hover {
-    box-shadow: 
-        0 15px 45px rgba(0, 0, 0, 0.7),
-        inset 0 1px 0 rgba(255,255,255,0.02); /* 👈 quasi invisible */
+.section p{
 
-    transform: translateY(-3px) scale(1.02);
+    max-width:800px;
+
+    margin:auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color:#828282;
+
+    overflow-wrap:break-word;
+
 }
 
-/* SECTION */
-.section {
-    margin: 10rem 0;
-    text-align: center;
+.section:not(#contact) p{
+
+    text-align:justify;
+
+}
+
+/* bouton urgence */
+
+.urgence{
+
+    margin-top:2rem;
+
+    margin-bottom:4rem;
+
+}
+
+/* texte introductif */
+
+.intro{
+
+    margin-top:2rem;
+
+}
+
+/* Centrer le bouton d'urgence et le texte introductif */
+.urgence, .intro {
     width: 100%;
-}
-
-/* TEXTE */
-.section p {
-    max-width: 800px;
-    margin: auto;
-    color: #828282;
-}
-
-/* seulement les sections texte longues */
-.section:not(#contact) p {
-    text-align: justify;
-}
-
-/* SERVICES */
-.services {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.service {
-    padding: 20px;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.4);
+    max-width: 800px; /* Même largeur max que les paragraphes */
+    margin-left: auto;
+    margin-right: auto;
 }
   
-  #contact .service {
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.service{
+
+    padding:20px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.40);
+
+}
+
+#contact .service{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+}
+
+#contact .service p{
+
+    text-align:center;
+
+    color:#ADADAD;
+
+    margin:5px 0;
+
+}
+
+/* =========================
+   TITRES
+========================= */
+
+h2{
+
+    color:#BFBFBF;
+
+    letter-spacing:.25em;
+
+    overflow-wrap:break-word;
+
+}
+
+h3{
+
+    color:#BFBFBF;
+
+    letter-spacing:.05em;
+
+    overflow-wrap:break-word;
+
+}
+
+/* =========================
+   LIENS
+========================= */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    border-bottom:1px solid transparent;
+
+}
+
+a:hover{
+
+    border-bottom:1px solid currentColor;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    margin-top:auto;
+
+    padding:2rem;
+
+    text-align:center;
+
+}
+
+main {
+    width: 100%;
+    max-width: 1100px; /* Même largeur max que .container */
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
-  #contact .service p {
-    text-align: center;
-    color: #ADADAD ;
-    margin: 5px 0;
-    width: 100%;
+/* =========================
+   VERSION MOBILE
+========================= */
+
+@media (max-width:768px){
+
+ .site-header {
+        padding: 12px 15px;
+        position: relative;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center; /* Centre la navigation */
+         min-height: 80px; /* Hauteur minimale pour éviter le chevauchement */
+    }
+
+.logo-titre{
+
+    width:38px;
+
+    height:38px;
+
 }
+
+
+.logo-link {
+        position: absolute;
+        left: 15px; /* Positionne le logo à gauche */
+        top: 15px; /* Aligne le logo en haut */
+    }
+
+
   
-/* TITRES */
-h2 {
-    color: #BFBFBF;
-    letter-spacing: 0.25em;
-}
-
-h3 {
-    color: #BFBFBF;
-    letter-spacing: 0.05em;
-}
-  
-/* COULEURS DES LIENS CLIQUABLES */
-  a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
-
-a:hover {
-  border-bottom: 1px solid currentColor;
-}
-  
-/* ESPACE FORMATION */
-.formation-title {
-    margin-top: 6rem;
-}
-
-/* FOOTER */
-footer {
-    margin-top: auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  nav {
-        display: flex;
-        flex-wrap: wrap;
+ nav {
+        width: 100%; /* Prend toute la largeur */
+        margin-top: 50px; /* Ajoute un espacement en haut pour éviter le chevauchement avec le logo */
+        gap: 8px; /* Espacement entre les boutons */
         justify-content: center;
-        gap: 10px;
+        flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
     }
 
-    nav a {
-        margin: 0;
-        font-size: 0.9rem;
+ nav a {
+        font-size: 0.95rem; /* plus lisible sur mobile */
+        padding: 10px 14px; /* boutons plus grands, plus faciles à toucher */
+        white-space: nowrap;
     }
-    .services {
-        grid-template-columns: 1fr;
-    }
+
+.logo{
+
+    font-size:1.45rem;
+
+    letter-spacing:.12em;
+
 }
 
+ .logo-section {
+        margin-top: 1rem;
+        margin-bottom: 8rem; /* Espacement sous le titre */
+    
+}
+
+.section{
+
+    margin:5rem;
+
+}
+
+.services{
+
+    grid-template-columns:1fr;
+
+}
+
+.container{
+
+    padding:0 15px;
+
+}
+
+.formation-title{
+
+    margin-top:3rem;
+
+}
+
+} 
 </style>
 
 </head>
@@ -230,6 +553,13 @@ footer {
 <h1 style="position:absolute; left:-9999px; height:1px; overflow:hidden;">
 Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, urgence 24h/24
 </h1>
+
+<!-- HEADER -->
+<header class="site-header">
+
+    <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Logo de Maître KOLGAR" class="logo-titre">
+    </a>
 
 <nav>
 <a href="index.html#competences">compétences</a>
