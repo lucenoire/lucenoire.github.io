@@ -67,8 +67,11 @@ body {
 
 /* NAV */
 nav {
-    margin-top: 0rem;
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centre le bloc nav */
+    display: flex;
+    margin-top: 0;
 }
 
 nav a {
@@ -78,23 +81,26 @@ nav a {
     font-weight: 500;
     display: inline-block;
 }
-
+  
 /* NOUVEAU STYLE POUR LE HEADER (À ajouter si ce n'est pas fait) */
 .site-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-start; /* Logo à gauche */
+    position: relative;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
+    height: 85px; /* Hauteur fixe pour aider au centrage */
 }
   
 /* LOGO EN HAUT À GAUCHE */
 .logo-link {
     display: block;
-    padding: 20px; /* Espace autour du logo */
-    z-index: 100; /* Assure que le logo reste au-dessus des autres éléments */
+    padding: 20px;
+    z-index: 10; /* Reste au-dessus si besoin */
     flex-shrink: 0;
+    margin-right: 20px;
 }
 
 .logo-titre {
@@ -240,19 +246,31 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+  .site-header {
+        flex-direction: column; /* Empile logo et menu verticalement */
+        height: auto; /* La hauteur s'adapte au contenu */
+        padding: 10px;
+    }
+
+    .logo-link {
+        margin-right: 0;
+        margin-bottom: 15px; /* Espace de sécurité entre logo et menu */
+        position: static; /* Annule le positionnement relatif/absolute */
+        padding: 10px;
+    }
+
+    nav {
+        position: static; /* Annule le centrage absolu (cause du chevauchement) */
+        transform: none;
+        width: 100%;
+        flex-direction: column; /* Menu vertical */
+        align-items: center;
     }
 
     nav a {
-        margin: 0;
-        font-size: 0.9rem;
-    }
-    .services {
-        grid-template-columns: 1fr;
+        margin: 10px 0; /* Espacement vertical pour les doigts */
+        display: block;
+        text-align: center;
     }
 }
 
