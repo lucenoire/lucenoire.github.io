@@ -79,28 +79,35 @@ nav a {
     display: inline-block;
 }
 
-/* LOGO */ 
-.logo-section {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 16rem;
-    color: #D9D9D9;
-    letter-spacing: 0.5em;
-    position: relative; /* Permet de positionner le logo absolument */
-}
-
+/* LOGO EN HAUT À GAUCHE */
 .logo-link {
+    display: block;
     position: absolute;
     left: 0;
     top: 0;
-    text-decoration: none;
-    color: inherit;
+    padding: 20px; /* Espace autour du logo */
+    z-index: 100; /* Assure que le logo reste au-dessus des autres éléments */
 }
 
 .logo-titre {
     width: 45px;
     height: 45px;
     object-fit: contain;
+}
+
+/* TITRE CLIQUABLE (centré) */
+.logo-section {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 16rem;
+    color: #D9D9D9;
+    letter-spacing: 0.5em;
+}
+
+.titre-cliquable {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
 }
 
 .logo {
@@ -261,14 +268,15 @@ Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, ur
 
 <main>
 
+<a href="index.html" class="logo-link">
+    <img src="logo.png" alt="Logo de Maître KOLGAR" class="logo-titre">
+</a>
+
 <div class="logo-section">
-    <a href="index.html" class="logo-link">
-        <img src="logo.png" alt="Logo de Maître KOLGAR" class="logo-titre">
+    <a href="index.html" class="titre-cliquable">
+        <div class="logo">Maître KOLGAR William</div>
+        <p><i>AVOCAT</i></p>
     </a>
-    <div class="logo">
-        Maître KOLGAR William
-    </div>
-    <p><i>AVOCAT</i></p>
 </div>
 
 <div class="section">
