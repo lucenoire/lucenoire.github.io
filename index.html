@@ -96,17 +96,21 @@ nav a {
 }
   
   .logo-link {
-    display: inline-flex;
-    align-items: center;
+    display: flex; /* Remplace inline-flex */
+    align-items: flex-start; /* Aligne en haut */
     gap: 12px;
     text-decoration: none;
     color: inherit;
+    justify-content: center; /* Centre horizontalement dans .logo-section */
+    width: fit-content; /* Ajuste la largeur au contenu */
+    margin: 0 auto; /* Centre le bloc dans .logo-section */
 }
 
 .logo-titre {
     width: 45px;
     height: 45px;
     object-fit: contain;
+    margin-top: 0.2em; /* Ajuste légèrement la position verticale si besoin */
 }
   
 /* BOUTON */
