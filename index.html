@@ -263,14 +263,16 @@ footer {
         position: static; /* Annule le centrage absolu (cause du chevauchement) */
         transform: none;
         width: 100%;
-        flex-direction: column; /* Menu vertical */
-        align-items: center;
+        flex-direction: row;       /* Garde l'horizontalité */
+        justify-content: center;   /* Centre les boutons */
+        flex-wrap: wrap;           /* Permet de passer à la ligne si besoin */
+        gap: 10px;                 /* Espace entre les boutons */
     }
 
     nav a {
-        margin: 10px 0; /* Espacement vertical pour les doigts */
-        display: block;
-        text-align: center;
+        margin: 5px 10px; /* Réduit les marges pour mobile */
+        display: inline-block;
+        font-size: 0.9rem; /* Légèrement plus petit si besoin */
     }
 }
 
