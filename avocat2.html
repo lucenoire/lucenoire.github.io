@@ -280,21 +280,31 @@ nav a:hover{
    SECTIONS
 ========================= */
 
-.section{
-
-    width:100%;
-
-    margin:12rem;
-
-    text-align:center;
-
+.section {
+    width: 100%;
+    max-width: 100%; /* Évite le débordement */
+    margin: 0 auto 4rem auto; /* Marge verticale seulement (haut/bas) */
+    margin-bottom: 8rem; /* Espacement entre chaque section */
+    text-align: center;
 }
 
+#competences, #experience, #contact {
+    margin-top: 6rem; /* Espacement avant la section */
+}
+
+/* Espacement spécial pour FORMATION (qui est un h2 dans #experience) */
+.formation-title {
+    margin-top: 8rem; /* Espacement avant "FORMATION" */
+}
+  
 .section p{
 
     max-width:800px;
 
     margin:auto;
+
+    margin-left: auto;
+    margin-right: auto;
 
     color:#828282;
 
@@ -326,6 +336,14 @@ nav a:hover{
 
 }
 
+/* Centrer le bouton d'urgence et le texte introductif */
+.urgence, .intro {
+    width: 100%;
+    max-width: 800px; /* Même largeur max que les paragraphes */
+    margin-left: auto;
+    margin-right: auto;
+}
+  
 /* =========================
    SERVICES
 ========================= */
@@ -436,6 +454,15 @@ footer{
 
 }
 
+main {
+    width: 100%;
+    max-width: 1100px; /* Même largeur max que .container */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* =========================
    VERSION MOBILE
 ========================= */
@@ -447,6 +474,7 @@ footer{
         position: relative;
         flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
         justify-content: center; /* Centre la navigation */
+         min-height: 80px; /* Hauteur minimale pour éviter le chevauchement */
     }
 
 .logo-titre{
