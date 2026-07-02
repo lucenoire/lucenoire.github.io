@@ -79,14 +79,22 @@ nav a {
     display: inline-block;
 }
 
+/* NOUVEAU STYLE POUR LE HEADER (À ajouter si ce n'est pas fait) */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+  
 /* LOGO EN HAUT À GAUCHE */
 .logo-link {
     display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
     padding: 20px; /* Espace autour du logo */
     z-index: 100; /* Assure que le logo reste au-dessus des autres éléments */
+    flex-shrink: 0;
 }
 
 .logo-titre {
