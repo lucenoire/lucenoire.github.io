@@ -4,238 +4,748 @@
 
 <meta charset="UTF-8">
 <meta name="robots" content="noindex, nofollow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KOLGAR</title>
-    <style>
-    /* Fond d'écran couvrant toute la page */
-    body {
-        font-family: 'Arial', sans-serif;
-        background: url('testFOND1.jpg') no-repeat center center;
-        background-size: cover;
-        color: #e0e0e0;
-        margin: 0;
-        padding: 0;
-        line-height: 1.6;
-        min-height: 100vh; /* Assure que le fond couvre toute la hauteur de la page */
-        }
-        .section {
-            margin: 2rem auto;
-            text-align: center;
-            padding: 1.5rem;
-            border: 1px solid rgba(120, 120, 120, 0.4);
-            border-radius: 12px;
-            background: rgba(25, 25, 25, 0.2);
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-            max-width: 1200px;
-        }
-        .btn {
-            display: inline-block;
-            background: #C25B60;
-            color: white;
-            padding: 0.8rem 1.5rem;
-            text-decoration: none;
-            border-radius: 4px;
-            margin: 1rem 0;
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        /* Autres styles inchangés */
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KOLGAR William - avocat pénaliste</title>
+
+<meta name="description" content="Avocat pénaliste à Moulins (Allier). Intervention en urgence 24h/24 : garde à vue, comparution immédiate, droit pénal. Déplacements à Paris.">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- SEO STRUCTURÉ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Maître KOLGAR",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moulins",
+    "postalCode": "03000",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Moulins", "Paris"],
+  "telephone": "+33600000000",
+  "description": "Avocat pénaliste - intervention en urgence 24h/24"
+}
+</script>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    font-family:'Roboto',sans-serif;
+
+    background:url('test4000x6000-A7.jpeg') no-repeat center center;
+
+    background-size:cover;
+
+    background-color:#0b0b0b;
+
+    color:#707070;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    padding:0 20px;
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header{
+
+    width:100%;
+
+    max-width:1100px;
+
+    margin:0 auto;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+.logo-link{
+
+    display:block;
+
+    padding:0;
+
+    margin:0;
+
+    flex-shrink:0;
+
+}
+
+.logo-titre{
+
+    width:45px;
+
+    height:45px;
+
+    object-fit:contain;
+
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+nav a{
+
+    color:#C4C4C4;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    white-space:nowrap;
+
+    padding:6px 10px;
+
+    border-radius:8px;
+
+    transition:.25s;
+
+}
+
+nav a:hover{
+
+    background:rgba(255,255,255,.06);
+
+    border-bottom:none;
+
+}
+
+    /* =========================
+   TITRE PRINCIPAL
+========================= */
+
+.logo-section{
+
+    text-align:center;
+
+    margin-top:1rem;
+
+    margin-bottom:6rem;
+
+    color:#D9D9D9;
+
+    letter-spacing:.5em;
+
+}
+
+.titre-cliquable{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    display:inline-block;
+
+}
+
+.logo{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:#F2F2F2;
+
+    letter-spacing:.20em;
+
+}
+
+/* =========================
+   BOUTONS
+========================= */
+
+.btn{
+
+    display:inline-block;
+
+    background:rgba(255,255,255,.02);
+
+    color:#949494;
+
+    padding:.8rem 1.5rem;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    backdrop-filter:blur(5px);
+
+    -webkit-backdrop-filter:blur(5px);
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,.40),
+        inset 0 1px 0 rgba(255,255,255,.05);
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 15px 45px rgba(0,0,0,.70),
+        inset 0 1px 0 rgba(255,255,255,.02);
+
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section{
+
+    width:100%;
+
+    margin:5rem 0;
+
+    text-align:center;
+
+}
+
+.section p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    color:#828282;
+
+    overflow-wrap:break-word;
+
+}
+
+.section:not(#contact) p{
+
+    text-align:justify;
+
+}
+
+/* bouton urgence */
+
+.urgence{
+
+    margin-top:2rem;
+
+    margin-bottom:1.5rem;
+
+}
+
+/* texte introductif */
+
+.intro{
+
+    margin-top:2rem;
+
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.service{
+
+    padding:20px;
+
+    box-shadow:0 15px 45px rgba(0,0,0,.40);
+
+}
+
+#contact .service{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+}
+
+#contact .service p{
+
+    text-align:center;
+
+    color:#ADADAD;
+
+    margin:5px 0;
+
+}
+
+/* =========================
+   TITRES
+========================= */
+
+h2{
+
+    color:#BFBFBF;
+
+    letter-spacing:.25em;
+
+    overflow-wrap:break-word;
+
+}
+
+h3{
+
+    color:#BFBFBF;
+
+    letter-spacing:.05em;
+
+    overflow-wrap:break-word;
+
+}
+
+.formation-title{
+
+    margin-top:6rem;
+
+}
+
+/* =========================
+   LIENS
+========================= */
+
+a{
+
+    color:inherit;
+
+    text-decoration:none;
+
+    border-bottom:1px solid transparent;
+
+}
+
+a:hover{
+
+    border-bottom:1px solid currentColor;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    margin-top:auto;
+
+    padding:2rem;
+
+    text-align:center;
+
+}
+
+/* =========================
+   VERSION MOBILE
+========================= */
+
+@media (max-width:768px){
+
+.site-header{
+
+    padding:12px 15px;
+
+}
+
+.logo-titre{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+nav{
+
+    gap:4px;
+
+}
+
+nav a{
+
+    font-size:.74rem;
+
+    padding:4px 4px;
+
+}
+
+.logo{
+
+    font-size:1.45rem;
+
+    letter-spacing:.12em;
+
+}
+
+.logo-section{
+
+    margin-top:1rem;
+
+    margin-bottom:2rem;
+
+}
+
+.section{
+
+    margin:3rem 0;
+
+}
+
+.services{
+
+    grid-template-columns:1fr;
+
+}
+
+.container{
+
+    padding:0 15px;
+
+}
+
+.formation-title{
+
+    margin-top:3rem;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <!-- Bannière de navigation avec fond semi-transparent -->
-<nav style="background: rgba(11, 11, 11, 0.7); padding: 1rem; text-align: center; border-top: 1px solid #333; border-bottom: 1px solid #333;">
-    <a href="#competences" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">compétences</a>
-    <a href="#experience" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">expérience</a>
-    <a href="blog.html" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">articles juridiques</a>
-    <a href="#contact" style="color: #e0e0e0; text-decoration: none; margin: 0 1.5rem; font-weight: bold;">contact</a>
-</nav>
 
-    <!-- Titre "KOLGAR élève Avocat pénaliste" avec fond semi-transparent -->
-<div style="text-align: center; padding: 2rem 1rem; background: rgba(11, 11, 11, 0.5);">
-    <div class="logo" style="font-size: 1.8rem; font-weight: bold; margin-bottom: 0.5rem;">KOLGAR</div>
-    <p style="margin: 0; font-size: 1rem;">élève Avocat pénaliste</p>
+<!-- H1 SEO INVISIBLE -->
+<h1 style="position:absolute; left:-9999px; height:1px; overflow:hidden;">
+Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, urgence 24h/24
+</h1>
+
+<!-- HEADER -->
+<header class="site-header">
+
+    <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Logo de Maître KOLGAR" class="logo-titre">
+    </a>
+
+    <nav>
+        <a href="#competences">compétences</a>
+        <a href="#experience">expérience</a>
+        <a href="articles-juridiques.html">articles juridiques</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+</header>
+
+<main>
+
+<div class="logo-section">
+
+    <a href="index.html" class="titre-cliquable">
+
+        <div class="logo">
+            Maître KOLGAR William
+        </div>
+
+        <p><i>AVOCAT</i></p>
+
+    </a>
+
 </div>
 
-<!-- Bouton "URGENCE" avec fond semi-transparent -->
-<div style="text-align: center; padding: 1rem; background: rgba(11, 11, 11, 0.5);">
-    <a href="#contact" class="btn">URGENCE* : 0600000000 ou urgence@wkavocat.fr</a>
+<!-- BOUTON D'URGENCE -->
+
+<div class="section urgence">
+
+    <a href="tel:+33600000000" class="btn">
+        📞 appel d'urgence
+    </a>
+
 </div>
 
-    <!-- Reste du contenu -->
-    <section id="" class="section">
-        <p style="margin-top: 1rem;">
-          *Notamment en cas de convocation ou acte d'enquête imminent ou encore au cours d'une garde à vue si vous êtes un membre de la famille du <span class="highlight">gardé à vue.</span>
-        </p>
-        <p>&nbsp;</p>
-        <p>
-          Règlement des honoraires par l'<span class="highlight">aide juridictionnelle (AJ)</span> acceptée
-        </p>
-        <p>(attribution de l'aide juridictionnelle aux personnes à faibles revenus)</p>
-    </section>
+<!-- INTRO -->
 
-    <section id="competences" class="section">
-        <div class="container">
-            <h2>COMPÉTENCES</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Droit pénal</h3>
-                    <p><span class="highlight">Comparution immédiate</span>, convocation par officier de police judiciaire (<span class="highlight">COPJ</span>), convocation par procès verbal (<span class="highlight">CPPV</span>), contrôle judiciaire, tribunal correctionnel, de police, cour d'assises...</p>
-                </div>
-                <div class="service">
-                    <h3>Droit pénal des affaires</h3>
-                    <p>Conseil et défense des entreprises et particuliers (<span class="highlight">escroquerie</span>, <span class="highlight">abus de biens sociaux</span>, abus de confiance, prise illégale d'intérêts, <span class="highlight">corruption</span>...) </p>
-                </div>
-                <div class="service">
-                    <h3>Droit de la presse</h3>
-                    <p><span class="highlight">Diffamation</span>, <span class="highlight">injure</span>, fausse information sur un réseau social (X, Instagram, Facebook...) ou dans un article de presse.</p>
-                </div>
-                <div class="service">
-                    <h3>Cyber</h3>
-                    <p>Mis en cause pour une infraction informatique - <span class="highlight">cyberharcèlement</span> - suppression de données en ligne - gestion de crise et conseil en communication.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="section intro">
 
-    <section id="experience" class="section" style="
-    <div class="container">
-        <h2>EXPÉRIENCE</h2>
-        <div class="experience">
-            <div>
-                <span class="icone"></span>
-                <span class="poste"><span class="highlight">Élève avocat</span> - droit pénal</span>
-            </div>
-            <div class="entreprise">Ministère de la Justice - Tribunal judiciaire de Créteil</div>
-            <div class="duree">janv. 2026 - juin 2026 · 6 mois</div>
-            <div class="lieu">Créteil</div>
-            </div>
+<div class="container">
 
-            <div class="experience">
-                <div>
-                    <span class="icone"></span>
-                    <span class="poste"><span class="highlight">Élève avocat</span> - droit pénal des affaires et droit de la presse</span>
-                </div>
-                <div class="entreprise">King & Spalding - Équipe "Special Matters and Government Investigations"</div>
-                <div class="duree">juil. 2025 - déc 2025 · 6 mois</div>
-                <div class="lieu">Paris</div>
-            </div>
+<p>
 
-            <div class="experience">
-                <div>
-                    <span class="icone"></span>
-                    <span class="poste"><span class="highlight">Juriste stagiaire</span> - droit pénal</span>
-                </div>
-                <div class="entreprise">Cabinet d'avocat Bluet</div>
-                <div class="duree">oct. 2023 - janv. 2025 · 4 mois</div>
-                <div class="lieu">Bordeaux</div>
-            </div>
+Intervention à chaque stade de la procédure :
+dépôt de <strong>plainte</strong>,
+audition libre,
+<strong>garde à vue</strong>,
+instruction,
+<strong>comparution immédiate</strong>,
+comparution sur reconnaissance préalable de culpabilité dite CRPC,
+convocation dite COPJ ou CPPV,
+audiences devant le tribunal correctionnel,
+la cour criminelle départementale,
+la cour d'assises...
 
-            <div class="experience">
-                <div>
-                    <span class="icone"></span>
-                    <span class="poste"><span class="highlight">Juriste stagiaire</span> - criminalité financière et organisée</span>
-                </div>
-                <div class="entreprise">Parquet de Paris - JUNALCO</div>
-                <div class="duree">mai 2021 - juin 2021 · 2 mois</div>
-                <div class="lieu">Paris</div>
-            </div>
+</p>
 
-            <div class="experience">
-                <div>
-                    <span class="icone"></span>
-                    <span class="poste"><span class="highlight">Athlète professionnel</span></span>
-                </div>
-                <div class="entreprise">Team Vitality</div>
-                <div class="duree">févr. 2017 - déc. 2018 · 1 an et 11 mois</div>
-                <div class="lieu">Las Vegas</div>
-            </div>
+<br>
 
-            <div class="formation">
-                <h3>FORMATION</h3>
+<p style="text-align:center;">
 
-                <div class="experience">
-                    <div>
-                        <span class="icone"></span>
-                        <span class="poste"><span class="highlight">Certificat d'aptitude à la profession d'avocat (CAPA)</span></span>
-                    </div>
-                    <div class="entreprise">École des avocats de Paris (EFB)</div>
-                    <div class="duree">2026</div>
-                </div>
+<strong>Défense</strong>
 
-                <div class="experience">
-                    <div>
-                        <span class="icone"></span>
-                        <span class="poste"><span class="highlight">Master 2</span> - Lutte contre la criminalité financière et organisée · Mention Bien</span>
-                    </div>
-                    <div class="entreprise">Université Aix-Marseille</div>
-                    <div class="duree">2020 - 2021</div>
-                </div>
+des mis en cause,
+prévenus et accusés
 
-                <div class="experience">
-                    <div>
-                        <span class="icone"></span>
-                        <span class="poste"><span class="highlight">Diplôme d'études supérieures universitaires (DESU)</span> - Double compétence "Finance et droit pénal" · Mention Très bien</span>
-                    </div>
-                    <div class="entreprise">Université Aix-Marseille</div>
-                    <div class="duree">2020 - 2021</div>
-                </div>
+ainsi que des victimes parties civiles
 
-                <div class="experience">
-                    <div>
-                        <span class="icone"></span>
-                        <span class="poste"><span class="highlight">Master 1</span> - Droit pénal et sciences criminelles · Mention Très bien</span>
-                    </div>
-                    <div class="entreprise">Université Aix-Marseille</div>
-                    <div class="duree">2019 - 2020</div>
-                </div>
+dans <strong>toute la France</strong> :
 
-                <div class="experience">
-                    <div>
-                        <span class="icone"></span>
-                        <span class="poste"><span class="highlight">Licence de Droit</span></span>
-                    </div>
-                    <div class="entreprise">Université Jean Moulin Lyon III</div>
-                    <div class="duree">2014 - 2018</div>
-                </div>
+<a href="avocat-penaliste-paris.html">Paris</a>,
+Lyon,
+Marseille,
+Clermont-Ferrand,
+Vichy,
+Montluçon,
+Moulins...
 
-                <div class="Certifications">
-                    <h3>CERTIFICATIONS</h3>
+</p>
 
-                    <div class="experience">
-                        <div>
-                            <span class="icone"></span>
-                            <span class="poste"><span class="highlight">Certification AMF</span> (habilitation à la fourniture de conseil en investissements financiers)</span>
-                        </div>
-                        <div class="entreprise">Autorité des marchés financiers (AMF) – France</div>
-                    </div>
+<br>
 
-                    <div class="experience">
-                        <div>
-                            <span class="icone"></span>
-                            <span class="poste"><span class="highlight">Certification cybersécurité</span> (MOOC SecNumEdu)</span>
-                        </div>
-                        <div class="entreprise">ANSSI - Agence nationale de la sécurité des systèmes d'information</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<p style="text-align:center;">
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>CONTACT</h2>
-            <p style="margin-top: 1rem;">📞 Téléphone : 00 00 00 00 00</p>
-            <p>Pour des raisons de confidentialité, contactez ce numéro de préférence sur l'application <span class="highlight">Signal</span></p>
-            <p>(à défaut Telegram, voire Whatsapp)</p>
-            <p>✉ Mail : william.kolgar@avocat.fr</p>
-            <p>📍 Adresse : 123 Rue de la Justice, 75000 Paris - 03000 Moulins</p>
-        </div>
-    </section>
+Entretien confidentiel protégé par le
 
-    <footer style="background: rgba(30, 30, 30, 0.9); text-align: center; padding: 1.5rem; width: 100%;">
-    <p style="margin: 0;">&copy; 2026 Cabinet d'élève avocat KOLGAR. Tous droits réservés.</p>
-    <p style="margin: 0;"><a href="mentions-legales.html" style="color: #ccc;">Mentions légales</a></p>
+<strong>secret professionnel absolu et illimité</strong>
+
+entre l'avocat et son client.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- COMPÉTENCES -->
+
+<section id="competences" class="section">
+
+<div class="container">
+
+<h2>COMPÉTENCES</h2>
+
+<div class="services">
+
+<div class="service">
+
+<h3>DROIT PÉNAL</h3>
+
+<p>
+
+Violences intrafamiliales,
+sexuelles et sexistes,
+dégradations,
+vol,
+harcèlement,
+trafic de stupéfiants...
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>DROIT PÉNAL DES AFFAIRES</h3>
+
+<p>
+
+Blanchiment,
+recel,
+escroquerie,
+abus de biens sociaux,
+abus de confiance,
+corruption,
+trafic d'influence,
+prise illégale d'intérêt,
+favoritisme,
+pantouflage,
+pratique commerciale trompeuse...
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>DROIT DE LA PRESSE</h3>
+
+<p>
+
+Diffamation,
+injure,
+provocation à la haine,
+fausses informations,
+réseaux sociaux...
+
+</p>
+
+</div>
+
+<div class="service">
+
+<h3>CYBER</h3>
+
+<p>
+
+Atteintes aux systèmes de traitement automatisé de données (STAD),
+atteinte à la vie privée,
+usurpation d'identité,
+cyberharcèlement...
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="experience" class="section">
+<div class="container">
+
+<h2>EXPÉRIENCE</h2>
+<div class="service">
+<p>Passé par le <strong> cabinet d'avocats international <i>King & Spalding</i></strong>, le <strong>parquet criminalité financière et organisée de Paris (JUNALCO)</strong>, le <strong>Tribunal judiciaire de Créteil</strong> ainsi que par différents <strong>cabinets spécialisés</strong>.</p> <br>
+<p>Sensibilité aux problématiques juridiques des réseaux sociaux développée lors d'une précédente expérience en tant qu'athlète professionnel d’e-sport chez Team Vitality.</p>
+</div>
+
+<h2 class="formation-title">FORMATION</h2>
+<div class="service">
+<p>Diplômé de l'<strong>École des avocats de Paris (EFB)</strong>, de l'<strong>Université Aix-Marseille</strong> (Master 2 "<i>Lutte contre la criminalité financière et organisée</i>"  mention Bien   –   DESU "<i>finance et droit pénal</i>" mention Très bien   –   Master 1 "<i>Droit pénal et sciences criminelles</i>"  mention Très bien) ainsi que de la <strong>Faculté de Droit Jean Moulin Lyon III</strong> (<i>Licence</i>).</p> <br>
+<p>Également titulaire de la certification de l'<strong>Autorité des Marchés Financiers (AMF)</strong>.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<div class="container">
+<h2>CONTACT</h2>
+
+<div class="service">
+  <p><i>Signal, Telegram ou WhatsApp</i> :</p>
+  <p>📞 <strong><a href="tel:+33600000000">06 00 00 00 00</a></strong></p>
+  <p>✉ <strong><a href="mailto:william.kolgar@avocat.fr">william.kolgar@avocat.fr</a></strong></p>
+  <p>📍 Cabinet : Moulins (03000 - Allier)</p>
+  <p> Avocat inscrit au Barreau de Moulins </p>
+  
+</div>
+  
+</div>
+</section>
+
+<!-- BOOST SEO -->
+<p style="font-size:0.7rem; opacity:0.5; text-align:center;">
+avocat pénaliste moulins - avocat garde à vue moulins - avocat comparution immédiate allier - avocat pénal paris
+</p>
+
+</main>
+
+<footer>
+<p>© 2026 Cabinet d'avocat KOLGAR – <a href="mentions-legales.html">Mentions légales</a> </p>
 </footer>
+
 </body>
 </html>
