@@ -186,13 +186,15 @@ nav a{
 
     transition:.25s;
 
+    border-bottom:1px solid transparent;
+
 }
 
 nav a:hover{
 
     background:rgba(255,255,255,.06);
 
-    border-bottom:none;
+    border-bottom:1px solid currentColor;
 
 }
 
@@ -284,17 +286,17 @@ nav a:hover{
     width: 100%;
     max-width: 1100px;
     margin: 0 auto 4rem auto; /* Marge verticale seulement (haut/bas) */
-    margin-bottom: 8rem; /* Espacement entre chaque section */
+    margin-bottom: 4rem; /* Espacement entre chaque section */
     text-align: center;
 }
 
 #competences, #experience, #contact {
-    margin-top: 6rem; /* Espacement avant la section */
+    margin-top: 3rem; /* Espacement avant la section */
 }
 
 /* Espacement spécial pour FORMATION (qui est un h2 dans #experience) */
 .formation-title {
-    margin-top: 8rem; /* Espacement avant "FORMATION" */
+    margin-top: 6rem; /* Espacement avant "FORMATION" */
 }
   
 .section p{
@@ -411,12 +413,6 @@ h3{
     letter-spacing:.05em;
 
     overflow-wrap:break-word;
-
-}
-
-.formation-title{
-
-    margin-top:6rem;
 
 }
 
