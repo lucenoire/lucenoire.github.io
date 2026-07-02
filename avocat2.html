@@ -442,13 +442,12 @@ footer{
 
 @media (max-width:768px){
 
-.site-header{
-
-    padding:12px 15px;
-
-   position: relative; /* 👈 Ajoute cette ligne pour le positionnement du logo */
-  
-}
+ .site-header {
+        padding: 12px 15px;
+        position: relative;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center; /* Centre la navigation */
+    }
 
 .logo-titre{
 
@@ -460,29 +459,26 @@ footer{
 
 
 .logo-link {
-  
-    left: 15px; /* 👈 Ajuste la position du logo sur mobile */
-  
-    top: 15px;
-  
+        position: absolute;
+        left: 15px; /* Positionne le logo à gauche */
+        top: 15px; /* Aligne le logo en haut */
     }
 
 
   
-nav{
+ nav {
+        width: 100%; /* Prend toute la largeur */
+        margin-top: 50px; /* Ajoute un espacement en haut pour éviter le chevauchement avec le logo */
+        gap: 8px; /* Espacement entre les boutons */
+        justify-content: center;
+        flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
+    }
 
-    gap:4px;
-
-    justify-content: center; /* 👈 Centre la navigation sur mobile 
-}
-
-nav a{
-
-    font-size:.74rem;
-
-    padding:4px 4px;
-
-}
+ nav a {
+        font-size: 0.7rem; /* Réduit légèrement la taille de la police */
+        padding: 6px 8px; /* Ajoute un peu de padding pour éviter la coupure */
+        white-space: nowrap; /* Empêche la coupure des mots */
+    }
 
 .logo{
 
@@ -492,12 +488,10 @@ nav a{
 
 }
 
-.logo-section{
-
-    margin-top:1rem;
-
-    margin-bottom:8rem;
-
+ .logo-section {
+        margin-top: 1rem;
+        margin-bottom: 8rem; /* Espacement sous le titre */
+    }
 }
 
 .section{
