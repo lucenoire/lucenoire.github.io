@@ -110,6 +110,11 @@ body{
     top: 20px; /* 👈 Aligne le logo en haut */
 }
 
+.logo-link:hover{
+    border-bottom:none;
+    transform: translateY(-4px);
+}
+  
 .logo-titre{
     width:45px;
     height:45px;
@@ -136,13 +141,12 @@ nav a{
     white-space:nowrap;
     padding:6px 10px;
     border-radius:8px;
-    transition:.25s;
+    transition:color .25s ease;
     border-bottom:1px solid transparent;
 }
 
 nav a:hover{
-    background:rgba(255,255,255,.06);
-    border-bottom:1px solid currentColor;
+    color:#F2F2F2;
 }
 
     /* =========================
@@ -263,6 +267,7 @@ nav a:hover{
 
 .service{
     padding:20px;
+    border-radius:14px;
     box-shadow:0 15px 45px rgba(0,0,0,.40);
 }
 
