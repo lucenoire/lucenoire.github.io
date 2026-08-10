@@ -10,6 +10,8 @@
 
 <meta name="description" content="Avocat pénaliste à Moulins (Allier). Intervention en urgence 24h/24 : garde à vue, comparution immédiate, droit pénal. Déplacements à Paris.">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -18,7 +20,6 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="manifest" href="site.webmanifest">
 
-<!-- SEO STRUCTURÉ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -30,17 +31,18 @@
     "postalCode": "03000",
     "addressCountry": "FR"
   },
-  "areaServed": ["Moulins", "Paris"],
+  "areaServed": ["Moulins", "Clermont Ferrand" "Paris" "Créteil" "Bobigny" "Nanterre" "Lyon"],
   "telephone": "+33600000000",
-  "description": "Avocat pénaliste - intervention en urgence 24h/24"
+  "description": "Avocat pénaliste - intervention en urgence 24h/24",
+  "streetAddress": "...",
+  "image": "https://www.kolgar.fr/logo.png",
+  "url": "https://www.kolgar.fr",
+  "priceRange": "€€",
+  "sameAs": ["https://barreau-moulins.fr/category/avocats/?s=KOLGAR", "https://www.linkedin.com/in/william-kolgar-2a34551b9/"]
 }
 </script>
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 html{
     overflow-y: scroll;
@@ -63,10 +65,6 @@ img{
     height:auto;
 }
 
-/* =========================
-   BODY
-========================= */
-
 body{
     font-family: 'Jost', system-ui, sans-serif;
     background:url('test4000x6000-A7.jpeg') no-repeat center center;
@@ -79,20 +77,12 @@ body{
     align-items:center;
 }
 
-/* =========================
-   CONTAINER
-========================= */
-
 .container{
     width:100%;
     max-width:1100px;
     margin:auto;
     padding:0 20px;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 .site-header{
     width:100%;
@@ -109,9 +99,9 @@ body{
     padding:0;
     margin:0;
     flex-shrink:0;
-    position: absolute; /* 👈 Ajoute cette ligne */
-    left: 20px; /* 👈 Déplace le logo à gauche */
-    top: 20px; /* 👈 Aligne le logo en haut */
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 .logo-link:hover{
@@ -125,17 +115,13 @@ body{
     object-fit:contain;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-
 nav{
     display:flex;
     align-items:center;
     gap:18px;
-    margin: 0 auto; /* 👈 Centre la navigation */
-    width: 100%; /* 👈 Prend toute la largeur disponible */
-    justify-content: center; /* 👈 Centre les liens de navigation */
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
 }
 
 nav a{
@@ -154,10 +140,6 @@ nav a:hover{
     background:rgba(255,255,255,.06);
     border-bottom:1px solid transparent;
 }
-
-    /* =========================
-   TITRE PRINCIPAL
-========================= */
 
 .logo-section{
     text-align:center;
@@ -179,10 +161,6 @@ nav a:hover{
     color:#F2F2F2;
     letter-spacing:.20em;
 }
-
-/* =========================
-   BOUTONS
-========================= */
 
 .btn{
     display:inline-block;
@@ -208,25 +186,20 @@ nav a:hover{
    border-bottom:none;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-
 .section {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto 4rem auto; /* Marge verticale seulement (haut/bas) */
-    margin-bottom: 4rem; /* Espacement entre chaque section */
+    margin: 0 auto 4rem auto;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
 #competences, #experience, #contact {
-    margin-top: 3rem; /* Espacement avant la section */
+    margin-top: 3rem;
 }
 
-/* Espacement spécial pour FORMATION (qui est un h2 dans #experience) */
 .formation-title {
-    margin-top: 6rem; /* Espacement avant "FORMATION" */
+    margin-top: 6rem;
 }
   
 .section p{
@@ -242,23 +215,19 @@ nav a:hover{
     text-align:justify;
 }
 
-/* bouton urgence */
 
 .urgence{
     margin-top:2rem;
     margin-bottom:4rem;
 }
 
-/* texte introductif */
-
 .intro{
     margin-top:2rem;
 }
 
-/* Centrer le bouton d'urgence et le texte introductif */
 .urgence, .intro {
     width: 100%;
-    max-width: 800px; /* Même largeur max que les paragraphes */
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -365,23 +334,23 @@ main {
 
 .logo-link {
         position: absolute;
-        left: 15px; /* Positionne le logo à gauche */
-        top: 15px; /* Aligne le logo en haut */
+        left: 15px;
+        top: 15px;
     }
 
 
   
  nav {
-        width: 100%; /* Prend toute la largeur */
-        margin-top: 50px; /* Ajoute un espacement en haut pour éviter le chevauchement avec le logo */
-        gap: 8px; /* Espacement entre les boutons */
+        width: 100%;
+        margin-top: 50px;
+        gap: 8px;
         justify-content: center;
-        flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
+        flex-wrap: wrap;
     }
 
  nav a {
-        font-size: 0.95rem; /* plus lisible sur mobile */
-        padding: 10px 14px; /* boutons plus grands, plus faciles à toucher */
+        font-size: 0.95rem;
+        padding: 10px 14px;
         white-space: nowrap;
     }
 
@@ -392,7 +361,7 @@ main {
 
  .logo-section {
         margin-top: 1rem;
-        margin-bottom: 8rem; /* Espacement sous le titre */
+        margin-bottom: 8rem;
 }
 
 .section{
@@ -418,11 +387,6 @@ main {
 
 <body>
 
-<!-- H1 SEO INVISIBLE -->
-<h1 style="position:absolute; left:-9999px; height:1px; overflow:hidden;">
-Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, urgence 24h/24
-</h1>
-
 <!-- HEADER -->
 <header class="site-header">
 
@@ -444,10 +408,9 @@ Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, ur
 <div class="logo-section">
 
     <a href="index.html" class="titre-cliquable">
-        <div class="logo">
+        <h1 class="logo">
             Maître KOLGAR William
-          
-        </div>
+        </h1>
         <p><i>AVOCAT</i></p>
     </a>
 
@@ -558,16 +521,11 @@ Atteintes aux systèmes de traitement automatisé de données (STAD), atteinte �
   <p>✉ <strong><a href="mailto:william.kolgar@avocat.fr">william.kolgar@avocat.fr</a></strong></p>
   <p>📍 Cabinet : Moulins (03000 - Allier)</p>
   <p> Avocat inscrit au Barreau de Moulins </p>
-  
 </div>
   
 </div>
 </section>
 
-<!-- BOOST SEO -->
-<p style="font-size:0.7rem; opacity:0.5; text-align:center;">
-avocat pénaliste Moulins, Allier - Paris - garde à vue - comparution immédiate
-</p>
 
 </main>
 
