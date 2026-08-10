@@ -10,7 +10,10 @@
 
 <meta name="description" content="Avocat pénaliste à Moulins (Allier). Intervention en urgence 24h/24 : garde à vue, comparution immédiate, droit pénal. Déplacements à Paris.">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="canonical" href="https://lucenoire.github.io/">
 
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -18,7 +21,6 @@
 <link rel="icon" href="favicon.ico" type="image/x-icon">
 <link rel="manifest" href="site.webmanifest">
 
-<!-- SEO STRUCTURÉ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -26,21 +28,22 @@
   "name": "Maître KOLGAR",
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "...",
     "addressLocality": "Moulins",
     "postalCode": "03000",
     "addressCountry": "FR"
   },
-  "areaServed": ["Moulins", "Paris"],
+  "areaServed": ["Moulins", "Clermont Ferrand", "Paris", "Créteil", "Bobigny", "Nanterre", "Lyon"],
   "telephone": "+33600000000",
-  "description": "Avocat pénaliste - intervention en urgence 24h/24"
+  "description": "Avocat pénaliste - intervention en urgence 24h/24",
+  "image": "https://lucenoire.github.io/logo.png",
+  "url": "https://lucenoire.github.io/",
+  "priceRange": "€€",
+  "sameAs": ["https://barreau-moulins.fr/category/avocats/?s=KOLGAR", "https://www.linkedin.com/in/william-kolgar-2a34551b9/"]
 }
 </script>
 
 <style>
-
-/* =========================
-   RESET
-========================= */
 
 html{
     overflow-y: scroll;
@@ -63,13 +66,9 @@ img{
     height:auto;
 }
 
-/* =========================
-   BODY
-========================= */
-
 body{
     font-family: 'Jost', system-ui, sans-serif;
-    background:url('test4000x6000-A7.jpeg') no-repeat center center;
+    background:url('kolgar-fond.webp') no-repeat center center;
     background-size:cover;
     background-color:#0b0b0b;
     color:#707070;
@@ -79,20 +78,12 @@ body{
     align-items:center;
 }
 
-/* =========================
-   CONTAINER
-========================= */
-
 .container{
     width:100%;
     max-width:1100px;
     margin:auto;
     padding:0 20px;
 }
-
-/* =========================
-   HEADER
-========================= */
 
 .site-header{
     width:100%;
@@ -109,9 +100,9 @@ body{
     padding:0;
     margin:0;
     flex-shrink:0;
-    position: absolute; /* 👈 Ajoute cette ligne */
-    left: 20px; /* 👈 Déplace le logo à gauche */
-    top: 20px; /* 👈 Aligne le logo en haut */
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 .logo-link:hover{
@@ -125,17 +116,13 @@ body{
     object-fit:contain;
 }
 
-/* =========================
-   NAVIGATION
-========================= */
-
 nav{
     display:flex;
     align-items:center;
     gap:18px;
-    margin: 0 auto; /* 👈 Centre la navigation */
-    width: 100%; /* 👈 Prend toute la largeur disponible */
-    justify-content: center; /* 👈 Centre les liens de navigation */
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
 }
 
 nav a{
@@ -155,15 +142,11 @@ nav a:hover{
     border-bottom:1px solid transparent;
 }
 
-    /* =========================
-   TITRE PRINCIPAL
-========================= */
-
 .logo-section{
     text-align:center;
     margin-top:1rem;
-    margin-bottom:18rem;
-    color:#D9D9D9;
+    margin-bottom:16rem;
+    color:#C4C4C4;
     letter-spacing:0.5em;
 }
 
@@ -176,13 +159,9 @@ nav a:hover{
 .logo{
     font-size:2rem;
     font-weight:bold;
-    color:#F2F2F2;
+    color:#C4C4C4;
     letter-spacing:.20em;
 }
-
-/* =========================
-   BOUTONS
-========================= */
 
 .btn{
     display:inline-block;
@@ -208,25 +187,20 @@ nav a:hover{
    border-bottom:none;
 }
 
-/* =========================
-   SECTIONS
-========================= */
-
 .section {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto 4rem auto; /* Marge verticale seulement (haut/bas) */
-    margin-bottom: 4rem; /* Espacement entre chaque section */
+    margin: 0 auto 4rem auto;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
 #competences, #experience, #contact {
-    margin-top: 3rem; /* Espacement avant la section */
+    margin-top: 3rem;
 }
 
-/* Espacement spécial pour FORMATION (qui est un h2 dans #experience) */
 .formation-title {
-    margin-top: 6rem; /* Espacement avant "FORMATION" */
+    margin-top: 6rem;
 }
   
 .section p{
@@ -242,23 +216,19 @@ nav a:hover{
     text-align:justify;
 }
 
-/* bouton urgence */
 
 .urgence{
     margin-top:2rem;
     margin-bottom:4rem;
 }
 
-/* texte introductif */
-
 .intro{
     margin-top:2rem;
 }
 
-/* Centrer le bouton d'urgence et le texte introductif */
 .urgence, .intro {
     width: 100%;
-    max-width: 800px; /* Même largeur max que les paragraphes */
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -324,10 +294,6 @@ a:hover{
     border-bottom:1px solid currentColor;
 }
 
-/* =========================
-   FOOTER
-========================= */
-
 footer{
     margin-top:auto;
     padding:2rem;
@@ -336,25 +302,21 @@ footer{
 
 main {
     width: 100%;
-    max-width: 1100px; /* Même largeur max que .container */
+    max-width: 1100px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* =========================
-   VERSION MOBILE
-========================= */
-
 @media (max-width:768px){
 
  .site-header {
         padding: 12px 15px;
         position: relative;
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
-        justify-content: center; /* Centre la navigation */
-         min-height: 80px; /* Hauteur minimale pour éviter le chevauchement */
+        flex-wrap: wrap;
+        justify-content: center;
+         min-height: 80px;
     }
 
 .logo-titre{
@@ -362,26 +324,24 @@ main {
     height:38px;
 }
 
-
 .logo-link {
         position: absolute;
-        left: 15px; /* Positionne le logo à gauche */
-        top: 15px; /* Aligne le logo en haut */
+        left: 15px;
+        top: 15px;
     }
 
 
-  
  nav {
-        width: 100%; /* Prend toute la largeur */
-        margin-top: 50px; /* Ajoute un espacement en haut pour éviter le chevauchement avec le logo */
-        gap: 8px; /* Espacement entre les boutons */
+        width: 100%;
+        margin-top: 50px;
+        gap: 8px;
         justify-content: center;
-        flex-wrap: wrap; /* Permet aux boutons de passer à la ligne si nécessaire */
+        flex-wrap: wrap;
     }
 
  nav a {
-        font-size: 0.95rem; /* plus lisible sur mobile */
-        padding: 10px 14px; /* boutons plus grands, plus faciles à toucher */
+        font-size: 0.95rem;
+        padding: 10px 14px;
         white-space: nowrap;
     }
 
@@ -391,8 +351,8 @@ main {
 }
 
  .logo-section {
-        margin-top: 1rem;
-        margin-bottom: 8rem; /* Espacement sous le titre */
+        margin-top: 0.5rem;
+        margin-bottom: 6rem;
 }
 
 .section{
@@ -418,36 +378,29 @@ main {
 
 <body>
 
-<!-- H1 SEO INVISIBLE -->
-<h1 style="position:absolute; left:-9999px; height:1px; overflow:hidden;">
-Avocat pénaliste à Moulins (Allier) - garde à vue, comparution immédiate, urgence 24h/24
-</h1>
-
-<!-- HEADER -->
 <header class="site-header">
 
     <a href="index.html" class="logo-link">
         <img src="logo.png" alt="Logo de Maître KOLGAR" class="logo-titre">
     </a>
 
-<nav>
-<a href="index.html#competences">compétences</a>
-<a href="index.html#experience">expérience</a>
-<a href="articles-juridiques.html">articles juridiques</a>
-<a href="index.html#contact">contact</a>
-</nav>
+    <nav>
+        <a href="#competences">compétences</a>
+        <a href="#experience">expérience</a>
+        <a href="articles-juridiques.html">articles juridiques</a>
+        <a href="#contact">contact</a>
+    </nav>
 
-</header> 
-  
+</header>
+
 <main>
 
 <div class="logo-section">
 
     <a href="index.html" class="titre-cliquable">
-        <div class="logo">
+        <h1 class="logo">
             Maître KOLGAR William
-          
-        </div>
+        </h1>
         <p><i>AVOCAT</i></p>
     </a>
 
