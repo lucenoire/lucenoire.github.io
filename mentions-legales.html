@@ -58,7 +58,7 @@ body{
     margin:0;
     padding:0;
     width:100%;
-    overflow-x:hidden;
+    overflow-x: clip;
 }
 
 img{
@@ -138,7 +138,7 @@ nav a{
 
 nav a:hover{
     color:#F2F2F2;
-    background:rgba(255,255,255,0.06);
+    background:rgba(255,255,255,.06);
     border-bottom:1px solid transparent;
 }
 
@@ -146,7 +146,7 @@ nav a:hover{
     text-align:center;
     margin-top:0.3rem;
     margin-bottom:16rem;
-    color:#C4C4C4;
+    color:rgba(196,196,196,0.85);   /* au lieu de #C4C4C4 */
     letter-spacing:0.5em;
 }
 
@@ -159,7 +159,7 @@ nav a:hover{
 .logo{
     font-size:2rem;
     font-weight:bold;
-    color:#C4C4C4;
+    color:rgba(196,196,196,0.85);   /* au lieu de #C4C4C4 */
     letter-spacing:.20em;
 }
 
@@ -199,23 +199,22 @@ nav a:hover{
     margin-top: 3rem;
 }
 
-.formation-title {
-    margin-top: 6rem;
-}
-  
 .section p{
     max-width:800px;
     margin:auto;
     margin-left: auto;
     margin-right: auto;
-    color:#828282;
+    color:rgba(130,130,130,0.85);
     overflow-wrap:break-word;
 }
 
-.section:not(#contact) p{
+.section:not(#contact):not(#competences) p{
     text-align:justify;
 }
 
+.intro p{
+    color:rgba(130,130,130,0.80);
+}
 
 .urgence{
     margin-top:2rem;
@@ -268,7 +267,7 @@ nav a:hover{
 ========================= */
 
 h2{
-    color:#BFBFBF;
+    color:rgba(191,191,191,0.85);   /* au lieu de #BFBFBF */
     letter-spacing:.25em;
     overflow-wrap:break-word;
 
@@ -296,7 +295,7 @@ a:hover{
 
 footer{
     margin-top:auto;
-    padding:2rem;
+    padding:1rem 2rem 2rem 2rem;
     text-align:center;
 }
 
