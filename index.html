@@ -314,57 +314,146 @@ main {
 
 @media (max-width:768px){
 .site-header {
-    padding: 8px 12px;
     position: sticky;
     top: 0;
-    z-index: 100;
-    background: transparent;
-    box-shadow: 0 1px 0 rgba(255,255,255,0.8);
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 50px;
-}
-.logo-titre{
-    width:32px;
-    height:32px;
-}
-.logo-link {
-    position: static;
-    flex-shrink: 0;
-}
-nav {
-    width: auto;
-    margin-top: 0;
-    gap: 6px 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-nav a {
-    font-size: 0.75rem;
-    padding: 6px 8px;
-    white-space: nowrap;
-    min-height: 32px;
+    z-index: 1000;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 55px;
+    padding: 8px 12px;
+    margin: 0 auto;
+
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: rgba(255,255,255,0.06);
-    border-radius: 6px;
+    justify-content: flex-start;
+
+    background: rgba(11,11,11,0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 0 1px 0 rgba(255,255,255,0.15);
 }
+
+.menu-toggle {
+    width: 38px;
+    height: 38px;
+    padding: 7px;
+    margin: 0 10px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #C4C4C4;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: rgba(196,196,196,0.85);
+    line-height: 1.1;
+}
+
+.mobile-title .mobile-name {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .08em;
+}
+
+.mobile-title .mobile-job {
+    margin-top: 3px;
+    font-size: .65rem;
+    font-style: italic;
+    letter-spacing: .18em;
+    color: rgba(196,196,196,0.70);
+}
+
+nav {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+
+    display: none;
+    flex-direction: column;
+    gap: 0;
+
+    background: rgba(11,11,11,0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-shadow: 0 12px 25px rgba(0,0,0,.35);
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    width: 100%;
+    padding: 14px 20px;
+
+    color: #C4C4C4;
+    font-size: .9rem;
+    font-weight: 400;
+
+    text-align: left;
+
+    border-bottom: 1px solid rgba(255,255,255,.06);
+    border-radius: 0;
+
+    background: transparent;
+}
+
+nav a:hover {
+    color: #F2F2F2;
+    background: rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.logo-section {
+    display: none;
+}
+
 .logo{
     font-size:1.45rem;
     letter-spacing:.12em;
 }
-.logo-section {
-    margin-top: 0.5rem;
-    margin-bottom: 6rem;
-}
+
 .section{
     margin:5rem;
 }
+
 .services{
     grid-template-columns:1fr;
 }
+
 .container{
     padding:0 15px;
 }
@@ -378,8 +467,15 @@ nav a {
 
 <header class="site-header">
 
-    <a href="index.html" class="logo-link">
-        <img src="logo.png" alt="Logo de Maître KOLGAR" class="logo-titre">
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <a href="index.html" class="mobile-title">
+        <span class="mobile-name">Maître KOLGAR William</span>
+        <span class="mobile-job">AVOCAT</span>
     </a>
 
     <nav>
