@@ -314,159 +314,57 @@ main {
 
 @media (max-width:768px){
 .site-header {
+    padding: 8px 12px;
     position: sticky;
     top: 0;
-    z-index: 1000;
-    width: 100%;
-    max-width: 1100px;
-    min-height: 55px;
-    padding: 8px 12px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(11, 11, 11, 0.98);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.15);
-}
-
-.menu-toggle {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-
-    width: 38px;
-    height: 38px;
-    padding: 7px;
-    margin: 0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-
+    z-index: 100;
     background: transparent;
-    border: none;
-    cursor: pointer;
-
-    appearance: none;
-    -webkit-appearance: none;
-
-    z-index: 1001;
-}
-
-  .menu-toggle:focus {
-    outline: none;
-}
-  
-.menu-toggle span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: #C4C4C4;
-    border-radius: 2px;
-    transition: 0.3s ease;
-}
-
-.menu-toggle.active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-}
-
-.menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-}
-
-.mobile-title {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    text-decoration: none;
-    color: rgba(196,196,196,.85);
-    line-height: 1.1;
-    white-space: nowrap;
+    min-height: 50px;
 }
-
-.mobile-title .mobile-name {
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: .08em;
+.logo-titre{
+    width:32px;
+    height:32px;
 }
-
-.mobile-title .mobile-job {
-    margin-top: 3px;
-    font-size: .65rem;
-    font-style: italic;
-    letter-spacing: .18em;
-    color: rgba(196,196,196,0.70);
+.logo-link {
+    position: static;
+    flex-shrink: 0;
 }
-
 nav {
-    position: absolute;
-    top: 55px;
-    left: 0;
-    width: 100%;
-
-    display: none;
-    flex-direction: column;
-    gap: 0;
-
-    background: #0b0b0b;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    width: auto;
+    margin-top: 0;
+    gap: 6px 8px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-
-nav.open {
-    display: flex;
-}
-
 nav a {
-    width: 100%;
-    padding: 14px 20px;
-
-    color: #C4C4C4;
-    font-size: .9rem;
-    font-weight: 400;
-
-    text-align: left;
-
-    border-bottom: 1px solid rgba(255,255,255,.06);
-    border-radius: 0;
-
-    background: transparent;
+    font-size: 0.75rem;
+    padding: 6px 8px;
+    white-space: nowrap;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.06);
+    border-radius: 6px;
 }
-
-nav a:hover {
-    color: #F2F2F2;
-    background: rgba(255,255,255,.06);
-    border-bottom: 1px solid rgba(255,255,255,.06);
-}
-
-.logo-section {
-    display: none;
-}
-
 .logo{
     font-size:1.45rem;
     letter-spacing:.12em;
 }
-
+.logo-section {
+    margin-top: 0.5rem;
+    margin-bottom: 6rem;
+}
 .section{
     margin:5rem;
 }
-
 .services{
     grid-template-columns:1fr;
 }
-
 .container{
     padding:0 15px;
 }
@@ -480,15 +378,8 @@ nav a:hover {
 
 <header class="site-header">
 
-    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <a href="index.html" class="mobile-title">
-        <span class="mobile-name">Maître KOLGAR William</span>
-        <span class="mobile-job">AVOCAT</span>
+    <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="Logo de Maître KOLGAR" class="logo-titre">
     </a>
 
     <nav>
@@ -619,48 +510,5 @@ Atteintes aux systèmes de traitement automatisé de données (STAD), atteinte �
 <p>© 2026 Cabinet d'avocat KOLGAR – <a href="mentions-legales.html">Mentions légales</a> </p>
 </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-
-    const menuToggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.site-header nav');
-
-    if (!menuToggle || !nav) {
-        return;
-    }
-
-    menuToggle.addEventListener('click', function () {
-
-        const isOpen = nav.classList.toggle('open');
-
-        menuToggle.classList.toggle('active', isOpen);
-
-        menuToggle.setAttribute(
-            'aria-expanded',
-            isOpen ? 'true' : 'false'
-        );
-
-        menuToggle.setAttribute(
-            'aria-label',
-            isOpen ? 'Fermer le menu' : 'Ouvrir le menu'
-        );
-    });
-
-    nav.querySelectorAll('a').forEach(function (link) {
-
-        link.addEventListener('click', function () {
-
-            nav.classList.remove('open');
-            menuToggle.classList.remove('active');
-
-            menuToggle.setAttribute('aria-expanded', 'false');
-            menuToggle.setAttribute('aria-label', 'Ouvrir le menu');
-        });
-
-    });
-
-});
-</script>
-  
 </body>
 </html>
